@@ -11,31 +11,33 @@
     </div>
   <% end %>
 
-  <div>
-    <%= form.label :dev, style: "display: block" %>
-    <%= form.text_field :dev %>
-  </div>
+  <div class="d-flex">
+    <div class="m-3">
+      <%= form.label :dev, style: "display: block" %>
+      <%= form.select :desired_attribute, ['Phillippe', 'Mauricio', 'Rodrigo', 'Antonio', 'Henry', 'Enzo', 'Jasiel', 'Diego']%>
+    </div>
 
-  <div>
-    <%= form.label :description, style: "display: block" %>
-    <%= form.text_area :description %>
-  </div>
+    <div class="m-3">
+      <%= form.label :description, style: "display: block" %>
+      <%= form.text_area :description %>
+    </div>
 
-  <div>
-    <%= form.label :date, style: "display: block" %>
-    <%= form.date_field :date %>
-  </div>
+    <div class="m-3">
+      <%= form.label :date, style: "display: block" %>
+      <%= form.date_field :date %>
+    </div>
 
-  <div>
-    <%= form.label :status, style: "display: block" %>
-    <%= form.text_field :status %>
-  </div>
+    <div class="m-3">
+      <%= form.label :status, style: "display: block" %>
+      <%= form.select :desired_attribute, ['Continuar', 'Parar', 'Melhorar']%>
+    </div>
+    <div class="m-3">
+      <%= form.label :good_bad, style: "display: block" %>
+      <%= form.select :desired_attribute, ['Boa', 'Ruim']%>
+    </div>
 
-  <div>
-    <%= form.label :good_bad, style: "display: block" %>
-    <%= form.text_field :good_bad %>
   </div>
-
+  
   <div>
     <%= form.submit %>
   </div>
