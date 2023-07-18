@@ -1,8 +1,12 @@
 <h1>New post</h1>
 
-<%= render "form", post: @post %>
+<div id="posts">
+  <button id="render">+</button>
+  <%= render "form", post: @post%>
 
-<br>
+  <br>
+  <div id="teste"></div>
+</div>
 
 <div>
   <%= link_to "Back to posts", posts_path %>
