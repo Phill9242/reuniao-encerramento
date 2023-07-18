@@ -1,0 +1,20 @@
+<!-- app/views/busca/index.html.erb -->
+<h1>Busca</h1>
+
+<%= form_with(url: "/busca/search", method: "get", local: true) do %>
+  <%= text_field_tag :search %>
+  <%= submit_tag "Buscar" %>
+<% end %>
+
+<% if @posts %>
+  <h2>Resultados</h2>
+  <% @posts.each do |post| %>
+    <p>
+      <%= post.dev %>
+      <%= post.description %>
+      <%= post.good_bad %>
+      <%= post.status %>
+      <%= post.date %>
+    </p>
+  <% end %>
+<% end %>
