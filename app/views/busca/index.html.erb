@@ -1,0 +1,52 @@
+<!-- app/views/busca/index.html.erb -->
+<h1>Busca</h1>
+
+<%= form_with(url: "/busca/search", method: "get", local: true, class: 'bg-transparent') do %>
+  <div class="mb-3">
+    <%= text_field_tag :search, nil, placeholder: "Digite o termo de busca", class: "form-control" %>
+  </div>
+
+  <div class="row">
+    <div class="col-md-3 mb-3">
+      <label>Selecione o Status</label>
+      <%= select_tag :status, options_for_select(['todos', 'continuar', 'parar', 'melhorar']), class: "form-select" %>
+    </div>
+
+    <div class="col-md-3 mb-3">
+      <label>Selecione o Tipo</label>
+      <%= select_tag :good_bad, options_for_select(['todos', 'boa', 'ruim']), class: "form-select" %>
+    </div>
+
+    <div class="col-md-3 mb-3">
+      <label>Data de início</label>
+      <%= date_field_tag :start_date, nil, class: "form-control" %>
+    </div>
+
+    <div class="col-md-3 mb-3">
+      <label>Data de fim</label>
+      <%= date_field_tag :end_date, nil, class: "form-control" %>
+    </div>
+  </div>
+
+  <div class="mb-3">
+    <%= submit_tag "Buscar", class: "btn btn-primary" %>
+  </div>
+<% end %>
+
+<% if @posts %>
+  <h2>Resultados</h2>
+  <% @posts.each do |post| %>
+    
+<ul class="list-group list-group-flush">
+  <li class="list-group-item list-group-item-success">
+    <div class="d-flex flex-wrap align-items-start">
+      <div class="flex-fill m-1" style="min-width: 100px;"><%= post.dev %></div>
+      <div class="flex-fill m-1 text-truncate" style="min-width: 100px;"><%= post.good_bad %></div>
+      <div class="flex-fill m-1 text-truncate" style="min-width: 100px;"><%= post.status %></div>
+      <div class="flex-fill m-1" style="min-width: 100px;"><%= post.date %></div>
+      <div class="flex-fill m-1 text-break w-100"><%= post.description %></div>
+    </div>
+  </li>
+</ul>
+  <% end %>
+<% end %>
