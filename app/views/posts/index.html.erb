@@ -17,7 +17,6 @@
         </tr>
       </thead>
     <% @posts.each do |post| %>
-      <%= render post %>
       <tr>
         <tbody>
           <td><%= post.dev %></td>
@@ -27,7 +26,7 @@
           <td><%= post.date %></td>
           <td><%= link_to 'Show', post, class:"btn btn-primary"%></td>
           <td><%= link_to 'Edit', edit_post_path(post), class:"btn btn-warning", style:"color: #FFF; background-color: orange" %></td>
-          <td><%= button_to "Delete", post_path(post), method: :delete, data: {confirm: 'Are you sure?'}, class:"btn btn-danger"%></td>
+          <td><%= button_to "Delete", post_path(post), method: :delete, confirm: 'Are you sure?', class:"btn btn-danger"%></td>
       </tr>
     <% end %>
   </div>
@@ -35,4 +34,4 @@
     </table>
 </div>
 
-<%= link_to "New post", new_post_path %>
+<%= link_to "New post", new_post_path, class:"btn btn-primary btn-small"%>
