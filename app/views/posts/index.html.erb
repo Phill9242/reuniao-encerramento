@@ -35,3 +35,7 @@
 </div>
 
 <%= link_to "New post", new_post_path, class:"btn btn-primary btn-small"%>
+
+<div class="d-flex.pagination">
+  <%= paginate @posts %>
+</div>
