@@ -11,33 +11,46 @@
       </ul>
     </div>
   <% end %>
- 
-  <div class="d-flex">
-    <div class="m-3">
-      <%= form.label "Desenvolvedor", style: "display: block; font-weight: bold; font-size:20px; margin-bottom:10px" %>
-      <%= form.select :dev , ['Phillippe', 'Mauricio', 'Rodrigo', 'Antonio', 'Henry', 'Enzo', 'Jasiel', 'Diego'] , {}, { :class => 'btn btn-secondary dropdown-toggle' }%>
-    </div>
-
-    <div class="m-3">
-      <%= form.label "Descrição", style: "display: block; font-weight: bold; font-size:20px; margin-bottom:10px" %>
-      <%= form.text_area :description, class: "form-control custom-textarea" %>
-    </div>
-
-    <div class="m-3">
-      <%= form.label "Bom/Ruim", style: "display: block; font-weight: bold; font-size:20px; margin-bottom:10px" %>
-      <%= form.select :good_bad, ['Boa', 'Ruim'], {}, { :class => 'btn btn-secondary dropdown-toggle' }%>
-    </div>
-    <div class="m-3">
-      <%= form.label :status, style: "display: block; font-weight: bold; font-size:20px; margin-bottom:10px" %>
-      <%= form.select :status, ['Continuar', 'Parar', 'Melhorar'], {}, { :class => 'btn btn-secondary dropdown-toggle' }%>
-    </div>
-    <div class="m-3">
-      <%= form.label "Data", style: "display: block; font-weight: bold; font-size:20px; margin-bottom:10px" %>
-      <%= form.date_field :date , class:"form-control", :value => Time.now.strftime('%Y-%m-%d')%>
-    </div>
+  <table class="table table-striped table-bordered">
+    <thead>
+      <th>
+        <%= form.label "Desenvolvedor", style: "display: block; font-weight: bold; font-size:20px; margin-bottom:10px" %>
+      </th>
+      <th>
+        <%= form.label "Descrição", style: "display: block; font-weight: bold; font-size:20px; margin-bottom:10px" %>
+      </th>
+      <th>
+        <%= form.label "Bom/Ruim", style: "display: block; font-weight: bold; font-size:20px; margin-bottom:10px" %>
+      </th>
+      <th>
+        <%= form.label :status, style: "display: block; font-weight: bold; font-size:20px; margin-bottom:10px" %>
+      </th>
+      <th>
+        <%= form.label "Data", style: "display: block; font-weight: bold; font-size:20px; margin-bottom:10px" %>
+      </th>
+    </thead>
+      <tr>
+        <tbody>
+          <td>
+            <%= form.select :dev , ['Phillippe', 'Mauricio', 'Rodrigo', 'Antonio', 'Henry', 'Enzo', 'Jasiel', 'Diego'] , {}, { :class => 'btn btn-light dropdown-toggle' }%>
+          </td>
+          <td>
+            <%= form.text_area :description, class: "form-control custom-textarea" %>
+          </td>
+          <td>
+            <%= form.select :good_bad, ['Boa', 'Ruim'], {}, { :class => 'btn btn-secondary dropdown-toggle' }%>
+          </td>
+          <td>
+            <%= form.select :status, ['Continuar', 'Parar', 'Melhorar'], {}, { :class => 'btn btn-secondary dropdown-toggle' }%>
+          </td>
+          <td>
+            <%= form.date_field :date , class:"form-control", :value => Time.now.strftime('%Y-%m-%d')%>
+          </td>
+        </tbody>
+      </tr>
+  </table>
+<% end %>
 
 </div>
 
   
-<% end %>
-  </div>
