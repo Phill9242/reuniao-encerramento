@@ -8,5 +8,5 @@ const teste = document.getElementById("renderizar")
 console.log(teste)
 
 button.addEventListener("click", () =>{
-  posts.append(teste)
+  posts.append("oi")
 })

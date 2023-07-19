@@ -13,32 +13,32 @@
 
   <div class="d-flex">
     <div class="m-3">
-      <%= form.label :dev, style: "display: block" %>
-      <%= form.select :dev, ['Phillippe', 'Mauricio', 'Rodrigo', 'Antonio', 'Henry', 'Enzo', 'Jasiel', 'Diego']%>
+      <%= form.label "Desenvolvedor", style: "display: block; font-weight: bold; font-size:20px; margin-bottom:10px" %>
+      <%= form.select :dev , ['Phillippe', 'Mauricio', 'Rodrigo', 'Antonio', 'Henry', 'Enzo', 'Jasiel', 'Diego'] , {}, { :class => 'btn btn-secondary dropdown-toggle' }%>
     </div>
 
     <div class="m-3">
-      <%= form.label :description, style: "display: block" %>
-      <%= form.text_area :description %>
+      <%= form.label "Descrição", style: "display: block; font-weight: bold; font-size:20px; margin-bottom:10px" %>
+      <%= form.text_area :description, class:"form-control", size: "65x10" %>
     </div>
 
     <div class="m-3">
-      <%= form.label :date, style: "display: block" %>
-      <%= form.date_field :date %>
+      <%= form.label "Bom/Ruim", style: "display: block; font-weight: bold; font-size:20px; margin-bottom:10px" %>
+      <%= form.select :good_bad, ['Boa', 'Ruim'], {}, { :class => 'btn btn-secondary dropdown-toggle' }%>
+    </div>
+    <div class="m-3">
+      <%= form.label :status, style: "display: block; font-weight: bold; font-size:20px; margin-bottom:10px" %>
+      <%= form.select :status, ['Continuar', 'Parar', 'Melhorar'], {}, { :class => 'btn btn-secondary dropdown-toggle' }%>
+    </div>
+    <div class="m-3">
+      <%= form.label "Data", style: "display: block; font-weight: bold; font-size:20px; margin-bottom:10px" %>
+      <%= form.date_field :date , class:"form-control", :value => Time.now.strftime('%Y-%m-%d')%>
     </div>
 
-    <div class="m-3">
-      <%= form.label :status, style: "display: block" %>
-      <%= form.select :status, ['Continuar', 'Parar', 'Melhorar']%>
-    </div>
-    <div class="m-3">
-      <%= form.label :good_bad, style: "display: block" %>
-      <%= form.select :good_bad, ['Boa', 'Ruim']%>
-    </div>
 
   </div>
   
   <div>
-    <%= form.submit %>
+    <%= form.submit atualizar, class:"btn btn-primary"%>
   </div>
 <% end %>

@@ -1,13 +1,15 @@
-<h1>New post</h1>
+<div class="container">
 
-<div id="posts">
-  <button id="render">+</button>
-  <%= render "form", post: @post%>
+  <h1 class="mt-4">New post</h1>
 
-  <br>
-  <div id="teste"></div>
-</div>
+  <div id="posts">
+    
+    <%= render "form", post: @post, atualizar: @criar%>
 
-<div>
-  <%= link_to "Back to posts", posts_path %>
+    <br>
+  </div>
+
+  <div>
+    <%= link_to "Back to posts", posts_path %>
+  </div>
 </div>
