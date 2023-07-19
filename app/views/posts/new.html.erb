@@ -2,7 +2,7 @@
   <%= render "form", post: @post, show_submit_button: false %>
 </div>
 
-<button id="addFormButton ">Adicionar formulário</button>
+<button id="addFormButton">Adicionar formulário</button>
 
 <%= form_with(url: posts_path, method: "post", id: "postsForm") do |form| %>
     <%= form.submit "Salvar todos", id: "submitButton" %>
@@ -16,8 +16,6 @@
     `;
     document.getElementById('formContainer').appendChild(newForm);
   });
-
-
   document.querySelector("#submitButton").addEventListener('click', function(event) {
   event.preventDefault();
   let forms = Array.from(document.querySelectorAll('.post-form'));
@@ -30,7 +28,6 @@
     good_bad: form.querySelector(`#post_good_bad`).value,
   };
 });
-console.log("info sub")
   fetch('/posts', {
     method: 'POST',
     headers: {
