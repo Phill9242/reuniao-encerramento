@@ -1,4 +1,5 @@
-<%= form_with(model: post) do |form| %>
+<div class="post-form">
+<%= form_with(model: post, html: {name: "post[sub_posts_attributes][#{local_assigns[:index]}]" }) do |form| %>
   <% if post.errors.any? %>
     <div style="color: red">
       <h2><%= pluralize(post.errors.count, "error") %> prohibited this post from being saved:</h2>
@@ -10,7 +11,7 @@
       </ul>
     </div>
   <% end %>
-
+ 
   <div class="d-flex">
     <div class="m-3">
       <%= form.label "Desenvolvedor", style: "display: block; font-weight: bold; font-size:20px; margin-bottom:10px" %>
@@ -19,7 +20,7 @@
 
     <div class="m-3">
       <%= form.label "Descrição", style: "display: block; font-weight: bold; font-size:20px; margin-bottom:10px" %>
-      <%= form.text_area :description, class:"form-control", size: "65x10" %>
+      <%= form.text_area :description, class: "form-control custom-textarea" %>
     </div>
 
     <div class="m-3">
@@ -35,10 +36,8 @@
       <%= form.date_field :date , class:"form-control", :value => Time.now.strftime('%Y-%m-%d')%>
     </div>
 
+</div>
 
-  </div>
   
-  <div>
-    <%= form.submit atualizar, class:"btn btn-primary"%>
-  </div>
 <% end %>
+  </div>

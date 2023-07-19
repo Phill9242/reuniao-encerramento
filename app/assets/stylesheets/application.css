@@ -19,3 +19,8 @@ textarea
 {
   font-size: 20px !important;
 }
+
+.custom-textarea {
+  height: 12vh;
+  width: 65vh;
+}

@@ -1,15 +1,47 @@
-<div class="container">
-
-  <h1 class="mt-4">New post</h1>
-
-  <div id="posts">
-    
-    <%= render "form", post: @post, atualizar: @criar%>
-
-    <br>
-  </div>
-
-  <div>
-    <%= link_to "Back to posts", posts_path %>
-  </div>
+<div id="formContainer">
+  <%= render "form", post: @post, show_submit_button: false %>
 </div>
+
+<button id="addFormButton ">Adicionar formulário</button>
+
+<%= form_with(url: posts_path, method: "post", id: "postsForm") do |form| %>
+    <%= form.submit "Salvar todos", id: "submitButton" %>
+<% end %>
+
+<script>
+  document.getElementById('addFormButton').addEventListener('click', function() {
+    var newForm = document.createElement('form');
+    newForm.innerHTML = `
+      <%= render "form", post: @post, show_submit_button: false %>
+    `;
+    document.getElementById('formContainer').appendChild(newForm);
+  });
+
+
+  document.querySelector("#submitButton").addEventListener('click', function(event) {
+  event.preventDefault();
+  let forms = Array.from(document.querySelectorAll('.post-form'));
+  let sub_posts = forms.map((form, index) => {
+  return {
+    dev: form.querySelector(`#post_dev`).value,
+    description: form.querySelector(`#post_description`).value,
+    date: form.querySelector(`#post_date`).value,
+    status: form.querySelector(`#post_status`).value,
+    good_bad: form.querySelector(`#post_good_bad`).value,
+  };
+});
+console.log("info sub")
+  fetch('/posts', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      'X-CSRF-Token': document.querySelector("meta[name='csrf-token']").content
+    },
+    body: JSON.stringify({ post: { sub_posts_attributes: sub_posts } }) 
+  })
+  .then(response => response.json())
+  .then(data => console.log(data));
+});
+
+</script>
+

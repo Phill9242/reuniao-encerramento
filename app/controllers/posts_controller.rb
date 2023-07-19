@@ -18,16 +18,15 @@ class PostsController < ApplicationController
   end
 
   def create
-    @post = Post.new(post_params)
-
-    respond_to do |format|
-      if @post.save
-        format.html { redirect_to post_url(@post), notice: "Post was successfully created." }
-        format.json { render :show, status: :created, location: @post }
-      else
-        format.html { render :new, status: :unprocessable_entity }
-        format.json { render json: @post.errors, status: :unprocessable_entity }
+    ActiveRecord::Base.transaction do
+      post_params[:sub_posts_attributes].each do |sub_post_params|
+        Post.create!(sub_post_params)
       end
+    end
+  
+    respond_to do |format|
+      format.html { redirect_to posts_url, notice: "Posts were successfully created." }
+      format.json { head :no_content }
     end
   end
 
@@ -64,6 +63,6 @@ class PostsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def post_params
-      params.require(:post).permit(:dev, :description, :date, :status, :good_bad)
+      params.require(:post).permit(:dev, :description, :date, :status, :good_bad, sub_posts_attributes: [:dev, :description, :date, :status, :good_bad])
     end
 end
