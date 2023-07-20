@@ -1,4 +1,3 @@
-<div class="post-form">
 <%= form_with(model: post, html: {name: "post[sub_posts_attributes][#{local_assigns[:index]}]" }) do |form| %>
   <% if post.errors.any? %>
     <div style="color: red">
@@ -12,7 +11,7 @@
     </div>
   <% end %>
   <tr>
-    <tbody class="table-striped">
+    <tbody class="post-form">
       <td>
         <%= form.select :dev , ['Phillippe', 'Mauricio', 'Rodrigo', 'Antonio', 'Henry', 'Enzo', 'Jasiel', 'Diego'] , {}, { :class => 'btn border dropdown-toggle w-100' }%>
       </td>
@@ -31,7 +30,5 @@
     </tbody>
   </tr>
 <% end %>
-
-</div>
 
   

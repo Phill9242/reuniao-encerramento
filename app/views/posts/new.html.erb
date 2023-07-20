@@ -41,9 +41,10 @@
     newForm.innerHTML = `
       <%= render "form", post: @post, show_submit_button: false %>
     `;
-    newForm.classList.add("table-striped")
+    newForm.classList.add("post-form")
     document.getElementById('tabela').appendChild(newForm);
   });
+  
   document.querySelector("#submitButton").addEventListener('click', function(event) {
   event.preventDefault();
   let forms = Array.from(document.querySelectorAll('.post-form'));
