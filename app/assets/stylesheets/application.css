@@ -37,3 +37,7 @@ select{
 .data {
   background-color: #c5c4c4 !important;
 }
+
+tr{
+  margin-bottom: 0 !important;
+}
