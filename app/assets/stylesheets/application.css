@@ -17,10 +17,27 @@
 
 textarea
 {
+  background-color: #c5c4c4 !important;
   font-size: 20px !important;
 }
 
 .custom-textarea {
   height: 12vh;
   width: 65vh;
+}
+
+td {
+  background-color: #dbdbdb !important;
+}
+
+select{
+  background-color: #c5c4c4 !important;
+}
+
+.data {
+  background-color: #c5c4c4 !important;
+}
+
+tr{
+  margin-bottom: 0 !important;
 }
