@@ -1,14 +1,30 @@
 <div class="container">
+  <h2 class="my-4">New Post</h2>
+  <div id="formContainer">
+    <table class="table table-bordered m-0" id="tabela">
+      <thead>
+        <th>
+          <p style="display: block; font-weight: bold; font-size:20px; margin-bottom:10px; width: 100%">Desenvolvedor</p>
+        </th>
+        <th>
+          <p style="display: block; font-weight: bold; font-size:20px; margin-bottom:10px; width: 100%">Descrição</p>
+        </th>
+        <th>
+          <p style="display: block; font-weight: bold; font-size:20px; margin-bottom:10px; width: 100%">Bom/Ruim</p>
+        </th>
+        <th>
+          <p style="display: block; font-weight: bold; font-size:20px; margin-bottom:10px; width: 100%">Status</p>
+        </th>
+        <th>
+          <p style="display: block; font-weight: bold; font-size:20px; margin-bottom:10px; width: 100%">Data</p>
+        </th>
+      </thead>
+      <%= render "form", post: @post, show_submit_button: false %>
+    </table>
+    <div class="d-flex justify-content-end">
 
-
-  <h1 class="mt-4">Editing post</h1>
-
-  <%= render "form", post: @post , atualizar: @atualizar%>
-
-  <br>
-
-  <div class="d-flex justify-content-end">
-    <%= link_to "Home", posts_path , class:"btn btn-danger "%>
+      <%= link_to "Salvar", edit_post_path(@post), method: :get ,class:"btn btn-success mt-3"%>
+      <%= link_to "Home", posts_path , class:"btn btn-danger mt-3"%>
+    </div>
   </div>
-
 </div>
