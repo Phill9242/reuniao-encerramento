@@ -1,27 +1,48 @@
 <div class="container">
+  <h2 class="my-4">New Post</h2>
   <div id="formContainer">
-    <%= render "form", post: @post, show_submit_button: false %>
+    <table class="table table-bordered m-0" id="tabela">
+      <thead>
+        <th>
+          <p style="display: block; font-weight: bold; font-size:20px; margin-bottom:10px; width: 100%">Desenvolvedor</p>
+        </th>
+        <th>
+          <p style="display: block; font-weight: bold; font-size:20px; margin-bottom:10px; width: 100%">Descrição</p>
+        </th>
+        <th>
+          <p style="display: block; font-weight: bold; font-size:20px; margin-bottom:10px; width: 100%">Bom/Ruim</p>
+        </th>
+        <th>
+          <p style="display: block; font-weight: bold; font-size:20px; margin-bottom:10px; width: 100%">Status</p>
+        </th>
+        <th>
+          <p style="display: block; font-weight: bold; font-size:20px; margin-bottom:10px; width: 100%">Data</p>
+        </th>
+      </thead>
+      <%= render "form", post: @post, show_submit_button: false %>
+    </table>
   </div>
 
   <div class="d-flex justify-content-end mt-3">
-
     <button id="addFormButton" class="btn btn-primary me-3">Adicionar formulário</button>
-
-    
-
     <%= form_tag(posts_path, method: :get, id:"postsForm") do %>
       <%= submit_tag "Salvar todos", id: "submitButton", class: "btn btn-success" %> 
     <% end %>
-</div>
-</div>
+  </div>
 
+  <div class="d-flex justify-content-end mt-3">
+    <%= link_to "Home", posts_path , class:"btn btn-danger "%>
+  </div>
+</div>
+  
 <script>
   document.getElementById('addFormButton').addEventListener('click', function() {
-    var newForm = document.createElement('form');
+    var newForm = document.createElement('tbody');
     newForm.innerHTML = `
       <%= render "form", post: @post, show_submit_button: false %>
     `;
-    document.getElementById('formContainer').appendChild(newForm);
+    newForm.classList.add("table-striped")
+    document.getElementById('tabela').appendChild(newForm);
   });
   document.querySelector("#submitButton").addEventListener('click', function(event) {
   event.preventDefault();
