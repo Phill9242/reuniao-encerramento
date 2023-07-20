@@ -36,7 +36,7 @@
                           <td><%= post.date %></td>
                           <td><%= link_to 'Show', post, class:"btn btn-primary"%></td>
                           <td><%= link_to 'Edit', edit_post_path(post), class:"btn btn-warning", style:"color: #FFF; background-color: orange" %></td>
-                          <td><%= button_to "Delete", post, method: :delete, class:"btn btn-danger button-delete", onclick: "return confirm('Tem certeza que deseja excluir este item?')" %></td>
+                          <td><%= button_to "Delete", post, method: :delete, class:"btn btn-danger button-delete", onclick: "return confirm('Tem certeza que deseja excluir este post?')" %></td>
                         </tbody>
                       </tr>  
                     <% end %>
