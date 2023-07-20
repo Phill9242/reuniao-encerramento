@@ -6,7 +6,3 @@ const button = document.getElementById("render")
 const posts = document.getElementsByClassName("posts")
 const teste = document.getElementById("renderizar")
 console.log(teste)
-
-button.addEventListener("click", () =>{
-  posts.append("oi")
-})
