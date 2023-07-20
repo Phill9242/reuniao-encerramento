@@ -5057,3 +5057,1493 @@ Processing by PostsController#new as HTML
 Completed 200 OK in 116ms (Views: 95.0ms | Allocations: 6418)
 
 
+Started GET "/" for ::1 at 2023-07-20 08:10:14 -0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (2.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:19
+  Rendered posts/index.html.erb within layouts/application (Duration: 62.6ms | Allocations: 12632)
+  Rendered layout layouts/application.html.erb (Duration: 1013.1ms | Allocations: 51308)
+Completed 200 OK in 1309ms (Views: 1038.0ms | ActiveRecord: 10.5ms | Allocations: 56695)
+
+
+Started GET "/posts/new" for ::1 at 2023-07-20 08:43:57 -0300
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 175.8ms | Allocations: 6304)
+  Rendered posts/_form.html.erb (Duration: 1.3ms | Allocations: 1804)
+  Rendered posts/new.html.erb within layouts/application (Duration: 221.6ms | Allocations: 8863)
+  Rendered layout layouts/application.html.erb (Duration: 302.4ms | Allocations: 11189)
+Completed 200 OK in 329ms (Views: 303.7ms | Allocations: 11668)
+
+
+Started GET "/" for ::1 at 2023-07-20 08:44:02 -0300
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:19
+  Rendered posts/index.html.erb within layouts/application (Duration: 13.3ms | Allocations: 5825)
+  Rendered layout layouts/application.html.erb (Duration: 84.4ms | Allocations: 8035)
+Completed 200 OK in 102ms (Views: 85.5ms | ActiveRecord: 3.2ms | Allocations: 8359)
+
+
+Started GET "/posts/42/edit" for ::1 at 2023-07-20 08:44:04 -0300
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"42"}
+  [1m[36mPost Load (2.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:61:in `set_post'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 8.9ms | Allocations: 2723)
+  Rendered posts/edit.html.erb within layouts/application (Duration: 25.4ms | Allocations: 3042)
+  Rendered layout layouts/application.html.erb (Duration: 89.2ms | Allocations: 5371)
+Completed 200 OK in 135ms (Views: 90.2ms | ActiveRecord: 2.2ms | Allocations: 8211)
+
+
+Started GET "/posts" for ::1 at 2023-07-20 09:02:36 -0300
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.8ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:19
+  Rendered posts/index.html.erb within layouts/application (Duration: 14.8ms | Allocations: 5737)
+  Rendered layout layouts/application.html.erb (Duration: 87.1ms | Allocations: 7946)
+Completed 200 OK in 107ms (Views: 88.1ms | ActiveRecord: 3.8ms | Allocations: 8228)
+
+
+Started GET "/posts/new" for ::1 at 2023-07-20 09:02:43 -0300
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 1.7ms | Allocations: 1931)
+  Rendered posts/_form.html.erb (Duration: 1.5ms | Allocations: 1731)
+  Rendered posts/new.html.erb within layouts/application (Duration: 4.3ms | Allocations: 3925)
+  Rendered layout layouts/application.html.erb (Duration: 86.8ms | Allocations: 6134)
+Completed 200 OK in 109ms (Views: 87.7ms | ActiveRecord: 0.0ms | Allocations: 6436)
+
+
+Started GET "/" for ::1 at 2023-07-20 09:40:38 -0300
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.9ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:19
+  Rendered posts/index.html.erb within layouts/application (Duration: 23.7ms | Allocations: 6353)
+  Rendered layout layouts/application.html.erb (Duration: 104.1ms | Allocations: 8990)
+Completed 200 OK in 144ms (Views: 116.1ms | ActiveRecord: 3.9ms | Allocations: 9982)
+
+
+Started GET "/posts/1" for ::1 at 2023-07-20 09:40:40 -0300
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (1.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:61:in `set_post'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/_post.html.erb (Duration: 12.3ms | Allocations: 327)
+  Rendered posts/show.html.erb within layouts/application (Duration: 130.6ms | Allocations: 3518)
+  Rendered layout layouts/application.html.erb (Duration: 203.1ms | Allocations: 5832)
+Completed 200 OK in 232ms (Views: 204.2ms | ActiveRecord: 1.7ms | Allocations: 6760)
+
+
+Started GET "/" for ::1 at 2023-07-20 09:40:42 -0300
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (2.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:19
+  Rendered posts/index.html.erb within layouts/application (Duration: 6.2ms | Allocations: 5621)
+  Rendered layout layouts/application.html.erb (Duration: 80.8ms | Allocations: 7831)
+Completed 200 OK in 100ms (Views: 79.9ms | ActiveRecord: 2.1ms | Allocations: 8147)
+
+
+Started GET "/posts/42/edit" for ::1 at 2023-07-20 09:40:44 -0300
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"42"}
+  [1m[36mPost Load (1.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:61:in `set_post'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 8.8ms | Allocations: 2652)
+  Rendered posts/edit.html.erb within layouts/application (Duration: 23.0ms | Allocations: 2965)
+  Rendered layout layouts/application.html.erb (Duration: 95.7ms | Allocations: 5165)
+Completed 200 OK in 127ms (Views: 96.9ms | ActiveRecord: 1.7ms | Allocations: 5989)
+
+
+Started GET "/posts/42/edit" for ::1 at 2023-07-20 09:40:47 -0300
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"42"}
+  [1m[36mPost Load (2.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:61:in `set_post'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 1.5ms | Allocations: 1974)
+  Rendered posts/edit.html.erb within layouts/application (Duration: 2.0ms | Allocations: 2073)
+  Rendered layout layouts/application.html.erb (Duration: 74.9ms | Allocations: 4273)
+Completed 200 OK in 98ms (Views: 76.0ms | ActiveRecord: 2.3ms | Allocations: 5025)
+
+
+Started GET "/posts/42/edit" for ::1 at 2023-07-20 09:41:08 -0300
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"42"}
+  [1m[36mPost Load (1.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:61:in `set_post'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 9.1ms | Allocations: 2772)
+  Rendered posts/edit.html.erb within layouts/application (Duration: 32.3ms | Allocations: 3142)
+  Rendered layout layouts/application.html.erb (Duration: 112.1ms | Allocations: 5753)
+Completed 200 OK in 155ms (Views: 123.8ms | ActiveRecord: 1.7ms | Allocations: 7193)
+
+
+Started GET "/posts/42/edit" for ::1 at 2023-07-20 09:41:22 -0300
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"42"}
+  [1m[36mPost Load (1.8ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:61:in `set_post'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 8.9ms | Allocations: 2786)
+  Rendered posts/edit.html.erb within layouts/application (Duration: 33.0ms | Allocations: 3155)
+  Rendered layout layouts/application.html.erb (Duration: 123.8ms | Allocations: 5766)
+Completed 200 OK in 167ms (Views: 134.7ms | ActiveRecord: 1.8ms | Allocations: 7280)
+
+
+Started GET "/" for ::1 at 2023-07-20 09:41:26 -0300
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (2.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:19
+  Rendered posts/index.html.erb within layouts/application (Duration: 24.8ms | Allocations: 5935)
+  Rendered layout layouts/application.html.erb (Duration: 118.4ms | Allocations: 8147)
+Completed 200 OK in 148ms (Views: 117.1ms | ActiveRecord: 2.2ms | Allocations: 8527)
+
+
+Started GET "/posts/new" for ::1 at 2023-07-20 09:41:28 -0300
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 9.4ms | Allocations: 2476)
+  Rendered posts/_form.html.erb (Duration: 1.1ms | Allocations: 1732)
+  Rendered posts/new.html.erb within layouts/application (Duration: 18.8ms | Allocations: 4818)
+  Rendered layout layouts/application.html.erb (Duration: 90.7ms | Allocations: 7039)
+Completed 200 OK in 117ms (Views: 91.7ms | ActiveRecord: 0.0ms | Allocations: 7388)
+
+
+Started GET "/posts/new" for ::1 at 2023-07-20 09:46:24 -0300
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 1.5ms | Allocations: 1920)
+  Rendered posts/_form.html.erb (Duration: 1.1ms | Allocations: 1731)
+  Rendered posts/new.html.erb within layouts/application (Duration: 3.9ms | Allocations: 3909)
+  Rendered layout layouts/application.html.erb (Duration: 80.0ms | Allocations: 6124)
+Completed 200 OK in 100ms (Views: 81.3ms | ActiveRecord: 0.0ms | Allocations: 6410)
+
+
+Started GET "/posts/new" for ::1 at 2023-07-20 09:46:42 -0300
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 9.6ms | Allocations: 2692)
+  Rendered posts/_form.html.erb (Duration: 1.2ms | Allocations: 1731)
+  Rendered posts/new.html.erb within layouts/application (Duration: 25.2ms | Allocations: 5198)
+  Rendered layout layouts/application.html.erb (Duration: 102.6ms | Allocations: 7818)
+Completed 200 OK in 139ms (Views: 114.1ms | ActiveRecord: 0.0ms | Allocations: 8802)
+
+
+Started GET "/posts/new" for ::1 at 2023-07-20 09:46:49 -0300
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 9.1ms | Allocations: 2689)
+  Rendered posts/_form.html.erb (Duration: 1.1ms | Allocations: 1731)
+  Rendered posts/new.html.erb within layouts/application (Duration: 47.6ms | Allocations: 5195)
+  Rendered layout layouts/application.html.erb (Duration: 117.8ms | Allocations: 7815)
+Completed 200 OK in 153ms (Views: 128.3ms | ActiveRecord: 0.0ms | Allocations: 8824)
+
+
+Started GET "/posts" for ::1 at 2023-07-20 09:46:58 -0300
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:19
+  Rendered posts/index.html.erb within layouts/application (Duration: 11.9ms | Allocations: 5985)
+  Rendered layout layouts/application.html.erb (Duration: 81.6ms | Allocations: 8193)
+Completed 200 OK in 110ms (Views: 80.9ms | ActiveRecord: 1.7ms | Allocations: 8572)
+
+
+Started GET "/posts" for ::1 at 2023-07-20 09:47:03 -0300
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.8ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:19
+  Rendered posts/index.html.erb within layouts/application (Duration: 13.2ms | Allocations: 6153)
+  Rendered layout layouts/application.html.erb (Duration: 90.2ms | Allocations: 8783)
+Completed 200 OK in 130ms (Views: 98.9ms | ActiveRecord: 1.8ms | Allocations: 9775)
+
+
+Started GET "/posts/1/edit" for ::1 at 2023-07-20 09:47:04 -0300
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (1.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:61:in `set_post'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 8.0ms | Allocations: 2652)
+  Rendered posts/edit.html.erb within layouts/application (Duration: 20.2ms | Allocations: 2969)
+  Rendered layout layouts/application.html.erb (Duration: 84.8ms | Allocations: 5169)
+Completed 200 OK in 111ms (Views: 85.8ms | ActiveRecord: 1.4ms | Allocations: 6013)
+
+
+Started GET "/posts" for ::1 at 2023-07-20 09:47:05 -0300
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.9ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:19
+  Rendered posts/index.html.erb within layouts/application (Duration: 5.8ms | Allocations: 5547)
+  Rendered layout layouts/application.html.erb (Duration: 69.5ms | Allocations: 7755)
+Completed 200 OK in 88ms (Views: 68.6ms | ActiveRecord: 1.9ms | Allocations: 8036)
+
+
+Started GET "/posts/new" for ::1 at 2023-07-20 09:47:07 -0300
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 10.6ms | Allocations: 2482)
+  Rendered posts/_form.html.erb (Duration: 1.3ms | Allocations: 1731)
+  Rendered posts/new.html.erb within layouts/application (Duration: 38.4ms | Allocations: 4883)
+  Rendered layout layouts/application.html.erb (Duration: 108.7ms | Allocations: 7091)
+Completed 200 OK in 135ms (Views: 109.7ms | ActiveRecord: 0.0ms | Allocations: 7435)
+
+
+Started GET "/posts/new" for ::1 at 2023-07-20 10:13:04 -0300
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 28.3ms | Allocations: 1727)
+  Rendered posts/_form.html.erb (Duration: 0.6ms | Allocations: 929)
+  Rendered posts/new.html.erb within layouts/application (Duration: 45.0ms | Allocations: 3430)
+  Rendered layout layouts/application.html.erb (Duration: 147.2ms | Allocations: 6050)
+Completed 200 OK in 187ms (Views: 159.2ms | Allocations: 7023)
+
+
+Started GET "/posts/new" for ::1 at 2023-07-20 10:14:10 -0300
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (Duration: 149.9ms | Allocations: 7848)
+  Rendered layout layouts/application.html.erb (Duration: 151.0ms | Allocations: 7945)
+Completed 500 Internal Server Error in 188ms (Allocations: 8933)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `form' for #<ActionView::Base:0x0000000000cad0>
+
+      '.freeze;@output_buffer.append=( form.label "Desenvolvedor", style: "display: block; font-weight: bold; font-size:20px; margin-bottom:10px; width: 100%" );@output_buffer.safe_append='
+                                       ^^^^
+Did you mean?  for
+               fork):
+    2:   <h2 class="my-4">New Post</h2>
+    3:   <thead>
+    4:     <th>
+    5:       <%= form.label "Desenvolvedor", style: "display: block; font-weight: bold; font-size:20px; margin-bottom:10px; width: 100%" %>
+    6:     </th>
+    7:     <th>
+    8:       <%= form.label "Descrição", style: "display: block; font-weight: bold; font-size:20px; margin-bottom:10px" %>
+  
+app/views/posts/new.html.erb:5
+Started GET "/posts/new" for ::1 at 2023-07-20 10:18:33 -0300
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (Duration: 38.5ms | Allocations: 5847)
+  Rendered layout layouts/application.html.erb (Duration: 39.6ms | Allocations: 5935)
+Completed 500 Internal Server Error in 77ms (Allocations: 6904)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `form' for #<ActionView::Base:0x0000000000ce18>
+Did you mean?  for
+               fork):
+     5:       <p style="display: block; font-weight: bold; font-size:20px; margin-bottom:10px; width: 100%">Desenvolvedor</p>
+     6:     </th>
+     7:     <th>
+     8:       <%= form.label "Descrição", style: "display: block; font-weight: bold; font-size:20px; margin-bottom:10px" %>
+     9:     </th>
+    10:     <th>
+    11:       <%= form.label "Bom/Ruim", style: "display: block; font-weight: bold; font-size:20px; margin-bottom:10px" %>
+  
+app/views/posts/new.html.erb:8
+Started GET "/posts/new" for ::1 at 2023-07-20 10:19:32 -0300
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 8.5ms | Allocations: 1697)
+  Rendered posts/_form.html.erb (Duration: 2.3ms | Allocations: 930)
+  Rendered posts/new.html.erb within layouts/application (Duration: 43.7ms | Allocations: 3419)
+  Rendered layout layouts/application.html.erb (Duration: 121.7ms | Allocations: 6057)
+Completed 200 OK in 158ms (Views: 133.0ms | Allocations: 7048)
+
+
+Started GET "/posts/new" for ::1 at 2023-07-20 10:20:01 -0300
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 7.8ms | Allocations: 1700)
+  Rendered posts/_form.html.erb (Duration: 0.9ms | Allocations: 929)
+  Rendered posts/new.html.erb within layouts/application (Duration: 45.0ms | Allocations: 3423)
+  Rendered layout layouts/application.html.erb (Duration: 125.5ms | Allocations: 6043)
+Completed 200 OK in 162ms (Views: 136.6ms | Allocations: 7044)
+
+
+Started GET "/posts/new" for ::1 at 2023-07-20 10:20:15 -0300
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 9.0ms | Allocations: 1721)
+  Rendered posts/_form.html.erb (Duration: 0.7ms | Allocations: 929)
+  Rendered posts/new.html.erb within layouts/application (Duration: 44.1ms | Allocations: 3444)
+  Rendered layout layouts/application.html.erb (Duration: 122.4ms | Allocations: 6064)
+Completed 200 OK in 162ms (Views: 132.8ms | Allocations: 7062)
+
+
+Started GET "/posts/new" for ::1 at 2023-07-20 10:21:01 -0300
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 9.9ms | Allocations: 1712)
+  Rendered posts/_form.html.erb (Duration: 0.5ms | Allocations: 929)
+  Rendered posts/new.html.erb within layouts/application (Duration: 46.9ms | Allocations: 3435)
+  Rendered layout layouts/application.html.erb (Duration: 123.5ms | Allocations: 6055)
+Completed 200 OK in 160ms (Views: 135.0ms | Allocations: 7053)
+
+
+Started GET "/posts/new" for ::1 at 2023-07-20 10:21:02 -0300
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 0.8ms | Allocations: 1113)
+  Rendered posts/_form.html.erb (Duration: 0.7ms | Allocations: 929)
+  Rendered posts/new.html.erb within layouts/application (Duration: 2.2ms | Allocations: 2338)
+  Rendered layout layouts/application.html.erb (Duration: 64.6ms | Allocations: 4546)
+Completed 200 OK in 83ms (Views: 65.7ms | Allocations: 4854)
+
+
+Started GET "/posts/new" for ::1 at 2023-07-20 10:21:08 -0300
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 8.4ms | Allocations: 1700)
+  Rendered posts/_form.html.erb (Duration: 0.5ms | Allocations: 929)
+  Rendered posts/new.html.erb within layouts/application (Duration: 46.9ms | Allocations: 3423)
+  Rendered layout layouts/application.html.erb (Duration: 125.6ms | Allocations: 6044)
+Completed 200 OK in 164ms (Views: 136.3ms | Allocations: 7016)
+
+
+Started GET "/posts/new" for ::1 at 2023-07-20 10:22:04 -0300
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 29.4ms | Allocations: 1707)
+  Rendered posts/_form.html.erb (Duration: 0.8ms | Allocations: 929)
+  Rendered posts/new.html.erb within layouts/application (Duration: 67.7ms | Allocations: 3431)
+  Rendered layout layouts/application.html.erb (Duration: 147.5ms | Allocations: 6052)
+Completed 200 OK in 185ms (Views: 157.9ms | Allocations: 7050)
+
+
+Started GET "/posts/new" for ::1 at 2023-07-20 10:22:24 -0300
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 0.8ms | Allocations: 1131)
+  Rendered posts/_form.html.erb (Duration: 0.5ms | Allocations: 929)
+  Rendered posts/new.html.erb within layouts/application (Duration: 2.6ms | Allocations: 2356)
+  Rendered layout layouts/application.html.erb (Duration: 72.8ms | Allocations: 4564)
+Completed 200 OK in 93ms (Views: 73.9ms | Allocations: 4872)
+
+
+Started GET "/posts/new" for ::1 at 2023-07-20 10:23:08 -0300
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 0.7ms | Allocations: 1116)
+  Rendered posts/_form.html.erb (Duration: 0.5ms | Allocations: 929)
+  Rendered posts/new.html.erb within layouts/application (Duration: 2.2ms | Allocations: 2341)
+  Rendered layout layouts/application.html.erb (Duration: 70.2ms | Allocations: 4549)
+Completed 200 OK in 90ms (Views: 71.1ms | Allocations: 4831)
+
+
+Started GET "/posts/new" for ::1 at 2023-07-20 10:24:01 -0300
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 8.0ms | Allocations: 1707)
+  Rendered posts/_form.html.erb (Duration: 0.6ms | Allocations: 929)
+  Rendered posts/new.html.erb within layouts/application (Duration: 22.6ms | Allocations: 3431)
+  Rendered layout layouts/application.html.erb (Duration: 99.0ms | Allocations: 6051)
+Completed 200 OK in 134ms (Views: 109.7ms | Allocations: 7023)
+
+
+Started GET "/posts/new" for ::1 at 2023-07-20 10:24:43 -0300
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 0.9ms | Allocations: 1131)
+  Rendered posts/_form.html.erb (Duration: 0.5ms | Allocations: 929)
+  Rendered posts/new.html.erb within layouts/application (Duration: 2.2ms | Allocations: 2356)
+  Rendered layout layouts/application.html.erb (Duration: 72.3ms | Allocations: 4564)
+Completed 200 OK in 93ms (Views: 73.4ms | Allocations: 4872)
+
+
+Started GET "/posts/new" for ::1 at 2023-07-20 10:26:15 -0300
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 30.3ms | Allocations: 1676)
+  Rendered posts/_form.html.erb (Duration: 0.5ms | Allocations: 929)
+  Rendered posts/new.html.erb within layouts/application (Duration: 67.2ms | Allocations: 3405)
+  Rendered layout layouts/application.html.erb (Duration: 150.6ms | Allocations: 6030)
+Completed 200 OK in 191ms (Views: 163.4ms | Allocations: 7005)
+
+
+Started GET "/posts/new" for ::1 at 2023-07-20 10:26:31 -0300
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 0.9ms | Allocations: 1108)
+  Rendered posts/_form.html.erb (Duration: 0.5ms | Allocations: 929)
+  Rendered posts/new.html.erb within layouts/application (Duration: 2.4ms | Allocations: 2333)
+  Rendered layout layouts/application.html.erb (Duration: 65.2ms | Allocations: 4541)
+Completed 200 OK in 85ms (Views: 66.2ms | Allocations: 4850)
+
+
+Started GET "/posts/new" for ::1 at 2023-07-20 10:27:06 -0300
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 7.8ms | Allocations: 1694)
+  Rendered posts/_form.html.erb (Duration: 0.5ms | Allocations: 929)
+  Rendered posts/new.html.erb within layouts/application (Duration: 41.4ms | Allocations: 3426)
+  Rendered layout layouts/application.html.erb (Duration: 118.8ms | Allocations: 6061)
+Completed 200 OK in 155ms (Views: 129.7ms | Allocations: 7037)
+
+
+Started GET "/posts/new" for ::1 at 2023-07-20 10:27:47 -0300
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 1.0ms | Allocations: 1143)
+  Rendered posts/_form.html.erb (Duration: 0.7ms | Allocations: 929)
+  Rendered posts/new.html.erb within layouts/application (Duration: 2.7ms | Allocations: 2368)
+  Rendered layout layouts/application.html.erb (Duration: 74.7ms | Allocations: 4576)
+Completed 200 OK in 95ms (Views: 76.0ms | Allocations: 4884)
+
+
+Started GET "/posts/new" for ::1 at 2023-07-20 10:28:08 -0300
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 8.1ms | Allocations: 1700)
+  Rendered posts/_form.html.erb (Duration: 0.7ms | Allocations: 929)
+  Rendered posts/new.html.erb within layouts/application (Duration: 44.1ms | Allocations: 3427)
+  Rendered layout layouts/application.html.erb (Duration: 117.0ms | Allocations: 6047)
+Completed 200 OK in 150ms (Views: 127.9ms | Allocations: 7022)
+
+
+Started GET "/posts/new" for ::1 at 2023-07-20 10:28:17 -0300
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 0.9ms | Allocations: 1140)
+  Rendered posts/_form.html.erb (Duration: 0.9ms | Allocations: 929)
+  Rendered posts/new.html.erb within layouts/application (Duration: 3.0ms | Allocations: 2365)
+  Rendered layout layouts/application.html.erb (Duration: 75.0ms | Allocations: 4573)
+Completed 200 OK in 95ms (Views: 76.0ms | Allocations: 4881)
+
+
+Started GET "/posts/new" for ::1 at 2023-07-20 10:28:47 -0300
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 8.4ms | Allocations: 1704)
+  Rendered posts/_form.html.erb (Duration: 1.4ms | Allocations: 929)
+  Rendered posts/new.html.erb within layouts/application (Duration: 24.8ms | Allocations: 3426)
+  Rendered layout layouts/application.html.erb (Duration: 102.0ms | Allocations: 6047)
+Completed 200 OK in 138ms (Views: 113.9ms | Allocations: 7019)
+
+
+Started GET "/posts/new" for ::1 at 2023-07-20 10:29:01 -0300
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 8.5ms | Allocations: 1689)
+  Rendered posts/_form.html.erb (Duration: 0.6ms | Allocations: 929)
+  Rendered posts/new.html.erb within layouts/application (Duration: 47.6ms | Allocations: 3412)
+  Rendered layout layouts/application.html.erb (Duration: 125.5ms | Allocations: 6032)
+Completed 200 OK in 163ms (Views: 137.1ms | Allocations: 7030)
+
+
+Started GET "/posts/new" for ::1 at 2023-07-20 10:29:07 -0300
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 1.1ms | Allocations: 1128)
+  Rendered posts/_form.html.erb (Duration: 0.7ms | Allocations: 929)
+  Rendered posts/new.html.erb within layouts/application (Duration: 2.9ms | Allocations: 2353)
+  Rendered layout layouts/application.html.erb (Duration: 70.0ms | Allocations: 4562)
+Completed 200 OK in 87ms (Views: 71.1ms | Allocations: 4870)
+
+
+Started GET "/posts/new" for ::1 at 2023-07-20 10:58:06 -0300
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 0.8ms | Allocations: 1134)
+  Rendered posts/_form.html.erb (Duration: 0.7ms | Allocations: 929)
+  Rendered posts/new.html.erb within layouts/application (Duration: 2.4ms | Allocations: 2359)
+  Rendered layout layouts/application.html.erb (Duration: 69.9ms | Allocations: 4567)
+Completed 200 OK in 89ms (Views: 70.9ms | Allocations: 4850)
+
+
+Started GET "/posts/new" for ::1 at 2023-07-20 10:58:17 -0300
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 7.7ms | Allocations: 1707)
+  Rendered posts/_form.html.erb (Duration: 0.6ms | Allocations: 929)
+  Rendered posts/new.html.erb within layouts/application (Duration: 45.7ms | Allocations: 3430)
+  Rendered layout layouts/application.html.erb (Duration: 121.3ms | Allocations: 6050)
+Completed 200 OK in 158ms (Views: 132.5ms | Allocations: 7022)
+
+
+Started GET "/posts/new" for ::1 at 2023-07-20 10:59:50 -0300
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 9.1ms | Allocations: 1716)
+  Rendered posts/_form.html.erb (Duration: 0.5ms | Allocations: 929)
+  Rendered posts/new.html.erb within layouts/application (Duration: 60.8ms | Allocations: 3440)
+  Rendered layout layouts/application.html.erb (Duration: 137.4ms | Allocations: 6060)
+Completed 200 OK in 177ms (Views: 149.9ms | Allocations: 7058)
+
+
+Started GET "/posts/new" for ::1 at 2023-07-20 11:00:07 -0300
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 8.0ms | Allocations: 1716)
+  Rendered posts/_form.html.erb (Duration: 0.6ms | Allocations: 929)
+  Rendered posts/new.html.erb within layouts/application (Duration: 45.8ms | Allocations: 3441)
+  Rendered layout layouts/application.html.erb (Duration: 122.3ms | Allocations: 6061)
+Completed 200 OK in 159ms (Views: 133.9ms | Allocations: 7062)
+
+
+Started GET "/posts/new" for ::1 at 2023-07-20 11:02:32 -0300
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 9.0ms | Allocations: 1715)
+  Rendered posts/_form.html.erb (Duration: 0.7ms | Allocations: 929)
+  Rendered posts/new.html.erb within layouts/application (Duration: 48.0ms | Allocations: 3443)
+  Rendered layout layouts/application.html.erb (Duration: 127.2ms | Allocations: 6079)
+Completed 200 OK in 166ms (Views: 138.9ms | Allocations: 7081)
+
+
+Started GET "/posts/new" for ::1 at 2023-07-20 11:03:22 -0300
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 28.3ms | Allocations: 1705)
+  Rendered posts/_form.html.erb (Duration: 0.7ms | Allocations: 929)
+  Rendered posts/new.html.erb within layouts/application (Duration: 43.3ms | Allocations: 3428)
+  Rendered layout layouts/application.html.erb (Duration: 121.3ms | Allocations: 6058)
+Completed 200 OK in 158ms (Views: 132.7ms | Allocations: 7057)
+
+
+Started GET "/posts/new" for ::1 at 2023-07-20 11:04:23 -0300
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 28.9ms | Allocations: 1687)
+  Rendered posts/_form.html.erb (Duration: 0.6ms | Allocations: 929)
+  Rendered posts/new.html.erb within layouts/application (Duration: 69.4ms | Allocations: 3411)
+  Rendered layout layouts/application.html.erb (Duration: 155.2ms | Allocations: 6031)
+Completed 200 OK in 200ms (Views: 168.0ms | Allocations: 7032)
+
+
+Started GET "/posts/new" for ::1 at 2023-07-20 11:04:30 -0300
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 9.4ms | Allocations: 1692)
+  Rendered posts/_form.html.erb (Duration: 0.6ms | Allocations: 929)
+  Rendered posts/new.html.erb within layouts/application (Duration: 50.1ms | Allocations: 3416)
+  Rendered layout layouts/application.html.erb (Duration: 130.5ms | Allocations: 6036)
+Completed 200 OK in 168ms (Views: 142.3ms | Allocations: 7034)
+
+
+Started GET "/posts/new" for ::1 at 2023-07-20 11:08:53 -0300
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 1.0ms | Allocations: 1113)
+  Rendered posts/_form.html.erb (Duration: 0.5ms | Allocations: 929)
+  Rendered posts/new.html.erb within layouts/application (Duration: 2.5ms | Allocations: 2338)
+  Rendered layout layouts/application.html.erb (Duration: 73.8ms | Allocations: 4546)
+Completed 200 OK in 94ms (Views: 75.1ms | Allocations: 4854)
+
+
+Started GET "/posts/new" for ::1 at 2023-07-20 11:09:46 -0300
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 28.9ms | Allocations: 1696)
+  Rendered posts/_form.html.erb (Duration: 0.5ms | Allocations: 929)
+  Rendered posts/new.html.erb within layouts/application (Duration: 44.2ms | Allocations: 3419)
+  Rendered layout layouts/application.html.erb (Duration: 126.2ms | Allocations: 6039)
+Completed 200 OK in 164ms (Views: 136.8ms | Allocations: 7012)
+
+
+Started GET "/posts/new" for ::1 at 2023-07-20 11:14:23 -0300
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 0.9ms | Allocations: 1113)
+  Rendered posts/_form.html.erb (Duration: 0.8ms | Allocations: 929)
+  Rendered posts/new.html.erb within layouts/application (Duration: 3.2ms | Allocations: 2338)
+  Rendered layout layouts/application.html.erb (Duration: 83.6ms | Allocations: 4549)
+Completed 200 OK in 104ms (Views: 84.6ms | Allocations: 4857)
+
+
+Started GET "/" for ::1 at 2023-07-20 11:45:14 -0300
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (2.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:19
+  Rendered posts/index.html.erb within layouts/application (Duration: 40.4ms | Allocations: 6135)
+  Rendered layout layouts/application.html.erb (Duration: 118.5ms | Allocations: 8343)
+Completed 200 OK in 148ms (Views: 119.7ms | ActiveRecord: 4.3ms | Allocations: 8698)
+
+
+Started GET "/posts/new" for ::1 at 2023-07-20 11:50:34 -0300
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 0.9ms | Allocations: 1122)
+  Rendered posts/_form.html.erb (Duration: 0.4ms | Allocations: 929)
+  Rendered posts/new.html.erb within layouts/application (Duration: 2.2ms | Allocations: 2347)
+  Rendered layout layouts/application.html.erb (Duration: 75.0ms | Allocations: 4555)
+Completed 200 OK in 97ms (Views: 76.0ms | ActiveRecord: 0.0ms | Allocations: 4842)
+
+
+Started GET "/posts/new" for ::1 at 2023-07-20 11:58:34 -0300
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 0.8ms | Allocations: 1131)
+  Rendered posts/_form.html.erb (Duration: 0.6ms | Allocations: 929)
+  Rendered posts/new.html.erb within layouts/application (Duration: 2.3ms | Allocations: 2356)
+  Rendered layout layouts/application.html.erb (Duration: 74.6ms | Allocations: 4564)
+Completed 200 OK in 96ms (Views: 75.7ms | Allocations: 4846)
+
+
+Started GET "/posts/new" for ::1 at 2023-07-20 14:20:17 -0300
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 0.8ms | Allocations: 1125)
+  Rendered posts/_form.html.erb (Duration: 0.6ms | Allocations: 929)
+  Rendered posts/new.html.erb within layouts/application (Duration: 2.2ms | Allocations: 2350)
+  Rendered layout layouts/application.html.erb (Duration: 71.2ms | Allocations: 4573)
+Completed 200 OK in 93ms (Views: 72.3ms | Allocations: 4856)
+
+
+Started GET "/posts/new" for ::1 at 2023-07-20 14:21:30 -0300
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 1.0ms | Allocations: 1122)
+  Rendered posts/_form.html.erb (Duration: 0.5ms | Allocations: 929)
+  Rendered posts/new.html.erb within layouts/application (Duration: 2.5ms | Allocations: 2347)
+  Rendered layout layouts/application.html.erb (Duration: 72.4ms | Allocations: 4558)
+Completed 200 OK in 94ms (Views: 73.5ms | Allocations: 4840)
+
+
+Started GET "/posts/new" for ::1 at 2023-07-20 14:21:48 -0300
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 0.9ms | Allocations: 1107)
+  Rendered posts/_form.html.erb (Duration: 0.4ms | Allocations: 929)
+  Rendered posts/new.html.erb within layouts/application (Duration: 2.2ms | Allocations: 2332)
+  Rendered layout layouts/application.html.erb (Duration: 71.7ms | Allocations: 4540)
+Completed 200 OK in 91ms (Views: 72.7ms | Allocations: 4822)
+
+
+Started GET "/posts/new" for ::1 at 2023-07-20 14:24:27 -0300
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 1.0ms | Allocations: 1113)
+  Rendered posts/_form.html.erb (Duration: 0.7ms | Allocations: 929)
+  Rendered posts/new.html.erb within layouts/application (Duration: 2.9ms | Allocations: 2338)
+  Rendered layout layouts/application.html.erb (Duration: 73.1ms | Allocations: 4547)
+Completed 200 OK in 94ms (Views: 74.2ms | Allocations: 4829)
+
+
+Started GET "/posts/new" for ::1 at 2023-07-20 14:32:15 -0300
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 0.9ms | Allocations: 1104)
+  Rendered posts/_form.html.erb (Duration: 0.6ms | Allocations: 929)
+  Rendered posts/new.html.erb within layouts/application (Duration: 2.4ms | Allocations: 2329)
+  Rendered layout layouts/application.html.erb (Duration: 74.8ms | Allocations: 4537)
+Completed 200 OK in 95ms (Views: 75.8ms | Allocations: 4819)
+
+
+Started GET "/posts/new" for ::1 at 2023-07-20 14:34:17 -0300
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 1.1ms | Allocations: 1116)
+  Rendered posts/_form.html.erb (Duration: 0.5ms | Allocations: 929)
+  Rendered posts/new.html.erb within layouts/application (Duration: 2.9ms | Allocations: 2341)
+  Rendered layout layouts/application.html.erb (Duration: 71.9ms | Allocations: 4549)
+Completed 200 OK in 93ms (Views: 73.0ms | Allocations: 4831)
+
+
+Started GET "/posts/new" for ::1 at 2023-07-20 14:47:30 -0300
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 0.8ms | Allocations: 1110)
+  Rendered posts/_form.html.erb (Duration: 0.4ms | Allocations: 929)
+  Rendered posts/new.html.erb within layouts/application (Duration: 2.1ms | Allocations: 2335)
+  Rendered layout layouts/application.html.erb (Duration: 70.6ms | Allocations: 4543)
+Completed 200 OK in 90ms (Views: 71.6ms | Allocations: 4825)
+
+
+Started GET "/posts/new" for ::1 at 2023-07-20 14:54:25 -0300
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 0.8ms | Allocations: 1119)
+  Rendered posts/_form.html.erb (Duration: 0.6ms | Allocations: 929)
+  Rendered posts/new.html.erb within layouts/application (Duration: 2.4ms | Allocations: 2344)
+  Rendered layout layouts/application.html.erb (Duration: 1846.8ms | Allocations: 8470)
+Completed 200 OK in 1869ms (Views: 1847.8ms | Allocations: 8752)
+
+
+Started GET "/posts/new" for ::1 at 2023-07-20 14:54:41 -0300
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 2.1ms | Allocations: 1116)
+  Rendered posts/_form.html.erb (Duration: 0.7ms | Allocations: 930)
+  Rendered posts/new.html.erb within layouts/application (Duration: 3.7ms | Allocations: 2342)
+  Rendered layout layouts/application.html.erb (Duration: 291.8ms | Allocations: 5906)
+Completed 200 OK in 310ms (Views: 292.7ms | Allocations: 6188)
+
+
+Started GET "/posts/new" for ::1 at 2023-07-20 14:54:52 -0300
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 0.8ms | Allocations: 1098)
+  Rendered posts/_form.html.erb (Duration: 0.6ms | Allocations: 929)
+  Rendered posts/new.html.erb within layouts/application (Duration: 2.4ms | Allocations: 2323)
+  Rendered layout layouts/application.html.erb (Duration: 279.9ms | Allocations: 5867)
+Completed 200 OK in 300ms (Views: 280.9ms | Allocations: 6149)
+
+
+Started GET "/posts/new" for ::1 at 2023-07-20 14:55:03 -0300
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 0.9ms | Allocations: 1128)
+  Rendered posts/_form.html.erb (Duration: 0.4ms | Allocations: 929)
+  Rendered posts/new.html.erb within layouts/application (Duration: 2.2ms | Allocations: 2353)
+  Rendered layout layouts/application.html.erb (Duration: 281.0ms | Allocations: 5902)
+Completed 200 OK in 302ms (Views: 281.9ms | Allocations: 6184)
+
+
+Started GET "/posts/new" for ::1 at 2023-07-20 14:58:37 -0300
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 0.9ms | Allocations: 1128)
+  Rendered posts/_form.html.erb (Duration: 0.5ms | Allocations: 929)
+  Rendered posts/new.html.erb within layouts/application (Duration: 2.3ms | Allocations: 2353)
+  Rendered layout layouts/application.html.erb (Duration: 280.2ms | Allocations: 5912)
+Completed 200 OK in 302ms (Views: 281.3ms | Allocations: 6194)
+
+
+Started GET "/posts/new" for ::1 at 2023-07-20 15:02:07 -0300
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 0.9ms | Allocations: 1116)
+  Rendered posts/_form.html.erb (Duration: 0.5ms | Allocations: 929)
+  Rendered posts/new.html.erb within layouts/application (Duration: 2.4ms | Allocations: 2341)
+  Rendered layout layouts/application.html.erb (Duration: 72.8ms | Allocations: 4549)
+Completed 200 OK in 94ms (Views: 74.0ms | Allocations: 4831)
+
+
+Started GET "/" for ::1 at 2023-07-20 15:02:11 -0300
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.9ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:19
+  Rendered posts/index.html.erb within layouts/application (Duration: 15.1ms | Allocations: 5681)
+  Rendered layout layouts/application.html.erb (Duration: 84.8ms | Allocations: 7889)
+Completed 200 OK in 105ms (Views: 85.9ms | ActiveRecord: 3.9ms | Allocations: 8166)
+
+
+Started GET "/posts/new" for ::1 at 2023-07-20 15:02:28 -0300
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 0.8ms | Allocations: 1119)
+  Rendered posts/_form.html.erb (Duration: 0.5ms | Allocations: 929)
+  Rendered posts/new.html.erb within layouts/application (Duration: 2.2ms | Allocations: 2344)
+  Rendered layout layouts/application.html.erb (Duration: 72.2ms | Allocations: 4552)
+Completed 200 OK in 95ms (Views: 73.3ms | ActiveRecord: 0.0ms | Allocations: 4839)
+
+
+Started GET "/posts/new" for ::1 at 2023-07-20 15:02:54 -0300
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 0.8ms | Allocations: 1110)
+  Rendered posts/_form.html.erb (Duration: 0.6ms | Allocations: 929)
+  Rendered posts/new.html.erb within layouts/application (Duration: 2.3ms | Allocations: 2335)
+  Rendered layout layouts/application.html.erb (Duration: 73.5ms | Allocations: 4543)
+Completed 200 OK in 93ms (Views: 74.5ms | ActiveRecord: 0.0ms | Allocations: 4828)
+
+
+Started GET "/posts/new" for ::1 at 2023-07-20 15:03:15 -0300
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 1.1ms | Allocations: 1119)
+  Rendered posts/_form.html.erb (Duration: 0.8ms | Allocations: 929)
+  Rendered posts/new.html.erb within layouts/application (Duration: 3.1ms | Allocations: 2344)
+  Rendered layout layouts/application.html.erb (Duration: 109.0ms | Allocations: 4596)
+Completed 200 OK in 130ms (Views: 110.1ms | ActiveRecord: 0.0ms | Allocations: 4881)
+
+
+Started GET "/posts/new" for ::1 at 2023-07-20 15:03:31 -0300
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 0.8ms | Allocations: 1122)
+  Rendered posts/_form.html.erb (Duration: 0.5ms | Allocations: 929)
+  Rendered posts/new.html.erb within layouts/application (Duration: 2.1ms | Allocations: 2347)
+  Rendered layout layouts/application.html.erb (Duration: 279.1ms | Allocations: 5894)
+Completed 200 OK in 298ms (Views: 280.1ms | ActiveRecord: 0.0ms | Allocations: 6179)
+
+
+Started GET "/posts/new" for ::1 at 2023-07-20 15:03:34 -0300
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 1.1ms | Allocations: 1098)
+  Rendered posts/_form.html.erb (Duration: 0.5ms | Allocations: 929)
+  Rendered posts/new.html.erb within layouts/application (Duration: 2.6ms | Allocations: 2323)
+  Rendered layout layouts/application.html.erb (Duration: 108.5ms | Allocations: 4576)
+Completed 200 OK in 128ms (Views: 109.5ms | ActiveRecord: 0.0ms | Allocations: 4862)
+
+
+Started GET "/posts/new" for ::1 at 2023-07-20 15:03:58 -0300
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 0.8ms | Allocations: 1140)
+  Rendered posts/_form.html.erb (Duration: 0.5ms | Allocations: 929)
+  Rendered posts/new.html.erb within layouts/application (Duration: 2.3ms | Allocations: 2365)
+  Rendered layout layouts/application.html.erb (Duration: 302.1ms | Allocations: 5931)
+Completed 200 OK in 323ms (Views: 303.1ms | ActiveRecord: 0.0ms | Allocations: 6216)
+
+
+Started GET "/posts/new" for ::1 at 2023-07-20 15:04:30 -0300
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 0.8ms | Allocations: 1119)
+  Rendered posts/_form.html.erb (Duration: 0.6ms | Allocations: 929)
+  Rendered posts/new.html.erb within layouts/application (Duration: 2.5ms | Allocations: 2344)
+  Rendered layout layouts/application.html.erb (Duration: 76.6ms | Allocations: 4552)
+Completed 200 OK in 95ms (Views: 77.8ms | ActiveRecord: 0.0ms | Allocations: 4837)
+
+
+Started GET "/posts/new" for ::1 at 2023-07-20 15:06:48 -0300
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 1.0ms | Allocations: 1128)
+  Rendered posts/_form.html.erb (Duration: 0.6ms | Allocations: 929)
+  Rendered posts/new.html.erb within layouts/application (Duration: 2.8ms | Allocations: 2353)
+  Rendered layout layouts/application.html.erb (Duration: 264.2ms | Allocations: 5903)
+Completed 200 OK in 284ms (Views: 265.2ms | ActiveRecord: 0.0ms | Allocations: 6188)
+
+
+Started GET "/posts/new" for ::1 at 2023-07-20 15:07:33 -0300
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 1.0ms | Allocations: 1128)
+  Rendered posts/_form.html.erb (Duration: 0.6ms | Allocations: 929)
+  Rendered posts/new.html.erb within layouts/application (Duration: 2.5ms | Allocations: 2353)
+  Rendered layout layouts/application.html.erb (Duration: 300.1ms | Allocations: 5905)
+Completed 200 OK in 321ms (Views: 301.2ms | Allocations: 6187)
+
+
+Started GET "/posts/new" for ::1 at 2023-07-20 15:09:23 -0300
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 0.9ms | Allocations: 1104)
+  Rendered posts/_form.html.erb (Duration: 0.5ms | Allocations: 929)
+  Rendered posts/new.html.erb within layouts/application (Duration: 2.4ms | Allocations: 2329)
+  Rendered layout layouts/application.html.erb (Duration: 289.3ms | Allocations: 5882)
+Completed 200 OK in 309ms (Views: 290.2ms | Allocations: 6164)
+
+
+Started GET "/posts/new" for ::1 at 2023-07-20 15:09:35 -0300
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 0.8ms | Allocations: 1137)
+  Rendered posts/_form.html.erb (Duration: 0.7ms | Allocations: 929)
+  Rendered posts/new.html.erb within layouts/application (Duration: 2.3ms | Allocations: 2362)
+  Rendered layout layouts/application.html.erb (Duration: 280.7ms | Allocations: 5908)
+Completed 200 OK in 301ms (Views: 281.5ms | Allocations: 6190)
+
+
+Started GET "/posts/new" for ::1 at 2023-07-20 15:10:29 -0300
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 9.6ms | Allocations: 1680)
+  Rendered posts/_form.html.erb (Duration: 0.7ms | Allocations: 929)
+  Rendered posts/new.html.erb within layouts/application (Duration: 46.3ms | Allocations: 3409)
+  Rendered layout layouts/application.html.erb (Duration: 121.1ms | Allocations: 6029)
+Completed 200 OK in 157ms (Views: 131.9ms | Allocations: 7004)
+
+
+Started GET "/posts/new" for ::1 at 2023-07-20 15:11:40 -0300
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 1.0ms | Allocations: 1125)
+  Rendered posts/_form.html.erb (Duration: 0.5ms | Allocations: 929)
+  Rendered posts/new.html.erb within layouts/application (Duration: 2.4ms | Allocations: 2350)
+  Rendered layout layouts/application.html.erb (Duration: 284.3ms | Allocations: 5994)
+Completed 200 OK in 305ms (Views: 285.4ms | Allocations: 6302)
+
+
+Started GET "/posts/new" for ::1 at 2023-07-20 15:11:55 -0300
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 1.1ms | Allocations: 1107)
+  Rendered posts/_form.html.erb (Duration: 0.7ms | Allocations: 929)
+  Rendered posts/new.html.erb within layouts/application (Duration: 3.0ms | Allocations: 2332)
+  Rendered layout layouts/application.html.erb (Duration: 268.2ms | Allocations: 5879)
+Completed 200 OK in 288ms (Views: 269.2ms | Allocations: 6161)
+
+
+Started GET "/posts/new" for ::1 at 2023-07-20 15:12:23 -0300
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 0.8ms | Allocations: 1126)
+  Rendered posts/_form.html.erb (Duration: 0.5ms | Allocations: 929)
+  Rendered posts/new.html.erb within layouts/application (Duration: 2.6ms | Allocations: 2351)
+  Rendered layout layouts/application.html.erb (Duration: 390.8ms | Allocations: 5915)
+Completed 200 OK in 410ms (Views: 391.8ms | Allocations: 6198)
+
+
+Started GET "/posts/new" for ::1 at 2023-07-20 15:13:05 -0300
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 29.2ms | Allocations: 1699)
+  Rendered posts/_form.html.erb (Duration: 0.6ms | Allocations: 929)
+  Rendered posts/new.html.erb within layouts/application (Duration: 43.8ms | Allocations: 3425)
+  Rendered layout layouts/application.html.erb (Duration: 328.7ms | Allocations: 7489)
+Completed 200 OK in 366ms (Views: 340.1ms | Allocations: 8464)
+
+
+Started GET "/posts/new" for ::1 at 2023-07-20 15:14:42 -0300
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 0.8ms | Allocations: 1128)
+  Rendered posts/_form.html.erb (Duration: 0.7ms | Allocations: 929)
+  Rendered posts/new.html.erb within layouts/application (Duration: 2.4ms | Allocations: 2353)
+  Rendered layout layouts/application.html.erb (Duration: 272.6ms | Allocations: 5911)
+Completed 200 OK in 294ms (Views: 273.6ms | Allocations: 6219)
+
+
+Started GET "/" for ::1 at 2023-07-20 15:14:54 -0300
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.9ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:19
+  Rendered posts/index.html.erb within layouts/application (Duration: 22.7ms | Allocations: 6153)
+  Rendered layout layouts/application.html.erb (Duration: 93.8ms | Allocations: 8369)
+Completed 200 OK in 123ms (Views: 95.1ms | ActiveRecord: 3.7ms | Allocations: 8727)
+
+
+Started GET "/posts/new" for ::1 at 2023-07-20 15:15:10 -0300
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 0.8ms | Allocations: 1107)
+  Rendered posts/_form.html.erb (Duration: 0.4ms | Allocations: 929)
+  Rendered posts/new.html.erb within layouts/application (Duration: 2.2ms | Allocations: 2332)
+  Rendered layout layouts/application.html.erb (Duration: 72.4ms | Allocations: 4540)
+Completed 200 OK in 94ms (Views: 73.3ms | ActiveRecord: 0.0ms | Allocations: 4829)
+
+
+Started GET "/posts/new" for ::1 at 2023-07-20 15:23:38 -0300
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 1.0ms | Allocations: 1116)
+  Rendered posts/_form.html.erb (Duration: 0.6ms | Allocations: 929)
+  Rendered posts/new.html.erb within layouts/application (Duration: 2.7ms | Allocations: 2341)
+  Rendered layout layouts/application.html.erb (Duration: 76.4ms | Allocations: 4549)
+Completed 200 OK in 96ms (Views: 77.4ms | Allocations: 4831)
+
+
+Started GET "/posts/new" for ::1 at 2023-07-20 15:33:56 -0300
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 1.0ms | Allocations: 1119)
+  Rendered posts/_form.html.erb (Duration: 0.5ms | Allocations: 929)
+  Rendered posts/new.html.erb within layouts/application (Duration: 2.4ms | Allocations: 2344)
+  Rendered layout layouts/application.html.erb (Duration: 68.5ms | Allocations: 4552)
+Completed 200 OK in 86ms (Views: 69.5ms | Allocations: 4834)
+
+
+Started GET "/posts/new" for ::1 at 2023-07-20 15:59:51 -0300
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 0.9ms | Allocations: 1131)
+  Rendered posts/_form.html.erb (Duration: 0.4ms | Allocations: 929)
+  Rendered posts/new.html.erb within layouts/application (Duration: 2.1ms | Allocations: 2356)
+  Rendered layout layouts/application.html.erb (Duration: 68.9ms | Allocations: 4564)
+Completed 200 OK in 88ms (Views: 69.8ms | Allocations: 4846)
+
+
+Started GET "/posts/new" for ::1 at 2023-07-20 16:04:54 -0300
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 1.0ms | Allocations: 1122)
+  Rendered posts/_form.html.erb (Duration: 0.8ms | Allocations: 929)
+  Rendered posts/new.html.erb within layouts/application (Duration: 3.1ms | Allocations: 2347)
+  Rendered layout layouts/application.html.erb (Duration: 72.0ms | Allocations: 4555)
+Completed 200 OK in 92ms (Views: 73.1ms | Allocations: 4837)
+
+
+Started GET "/posts/new" for ::1 at 2023-07-20 16:05:09 -0300
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 2.8ms | Allocations: 1131)
+  Rendered posts/_form.html.erb (Duration: 0.5ms | Allocations: 930)
+  Rendered posts/new.html.erb within layouts/application (Duration: 4.4ms | Allocations: 2357)
+  Rendered layout layouts/application.html.erb (Duration: 252.9ms | Allocations: 5923)
+Completed 200 OK in 273ms (Views: 254.1ms | Allocations: 6206)
+
+
+Started GET "/posts/new" for ::1 at 2023-07-20 16:05:16 -0300
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 0.8ms | Allocations: 1125)
+  Rendered posts/_form.html.erb (Duration: 0.6ms | Allocations: 929)
+  Rendered posts/new.html.erb within layouts/application (Duration: 2.3ms | Allocations: 2350)
+  Rendered layout layouts/application.html.erb (Duration: 276.6ms | Allocations: 5913)
+Completed 200 OK in 297ms (Views: 277.7ms | Allocations: 6195)
+
+
+Started GET "/" for ::1 at 2023-07-20 16:06:57 -0300
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (2.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:19
+  Rendered posts/index.html.erb within layouts/application (Duration: 14.7ms | Allocations: 5675)
+  Rendered layout layouts/application.html.erb (Duration: 82.6ms | Allocations: 7896)
+Completed 200 OK in 104ms (Views: 83.7ms | ActiveRecord: 4.3ms | Allocations: 8173)
+
+
+Started GET "/posts/new" for ::1 at 2023-07-20 16:07:01 -0300
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 0.8ms | Allocations: 1110)
+  Rendered posts/_form.html.erb (Duration: 0.5ms | Allocations: 930)
+  Rendered posts/new.html.erb within layouts/application (Duration: 2.2ms | Allocations: 2336)
+  Rendered layout layouts/application.html.erb (Duration: 70.3ms | Allocations: 4545)
+Completed 200 OK in 90ms (Views: 71.5ms | ActiveRecord: 0.0ms | Allocations: 4832)
+
+
+Started GET "/posts" for ::1 at 2023-07-20 16:07:06 -0300
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (2.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:19
+  Rendered posts/index.html.erb within layouts/application (Duration: 6.6ms | Allocations: 5532)
+  Rendered layout layouts/application.html.erb (Duration: 77.3ms | Allocations: 7748)
+Completed 200 OK in 96ms (Views: 76.3ms | ActiveRecord: 2.2ms | Allocations: 8028)
+
+
+Started GET "/posts/new" for ::1 at 2023-07-20 16:07:12 -0300
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 1.0ms | Allocations: 1104)
+  Rendered posts/_form.html.erb (Duration: 0.5ms | Allocations: 929)
+  Rendered posts/new.html.erb within layouts/application (Duration: 2.3ms | Allocations: 2329)
+  Rendered layout layouts/application.html.erb (Duration: 64.1ms | Allocations: 4537)
+Completed 200 OK in 82ms (Views: 65.1ms | ActiveRecord: 0.0ms | Allocations: 4824)
+
+
+Started GET "/posts/new" for ::1 at 2023-07-20 16:08:56 -0300
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (Duration: 25.4ms | Allocations: 1365)
+  Rendered layout layouts/application.html.erb (Duration: 26.2ms | Allocations: 1454)
+Completed 500 Internal Server Error in 63ms (ActiveRecord: 0.0ms | Allocations: 2414)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <div class="container">
+  <h2 class="my-4">New Post</h2>
+  <div id="formContainer">
+    <table class="table table-bordered m-0" id="tabela">
+      <thead>
+        <th>
+          <p style="display: block; font-weight: bold; font-size:20px; margin-bottom:10px; width: 100%">Desenvolvedor</p>
+        </th>
+        <th>
+          <p style="display: block; font-weight: bold; font-size:20px; margin-bottom:10px; width: 100%">Descrição</p>
+        </th>
+        <th>
+          <p style="display: block; font-weight: bold; font-size:20px; margin-bottom:10px; width: 100%">Bom/Ruim</p>
+        </th>
+        <th>
+          <p style="display: block; font-weight: bold; font-size:20px; margin-bottom:10px; width: 100%">Status</p>
+        </th>
+        <th>
+          <p style="display: block; font-weight: bold; font-size:20px; margin-bottom:10px; width: 100%">Data</p>
+        </th>
+      </thead>
+      <%= render "form", post: @post, show_submit_button: false %>
+    </table>
+  </div>
+
+  <div class="d-flex justify-content-end mt-3">
+    <button id="addFormButton" class="btn btn-primary me-3">Adicionar formulário</button>
+    <%= form_with(url: posts_path, method: "post", id: "postsForm") do |form| %>
+      <%= form.submit "Salvar todos", id: "submitButton" class:"btn btn-success"%>
+    <% end %>
+  </div>
+
+  <div class="d-flex justify-content-end mt-3">
+    <%= link_to "Home", posts_path , class:"btn btn-danger "%>
+  </div>
+</div>
+  
+<script>
+  document.getElementById('addFormButton').addEventListener('click', function() {
+    var newForm = document.createElement('tbody');
+    newForm.innerHTML = `
+      <%= render "form", post: @post, show_submit_button: false %>
+    `;
+    newForm.classList.add("table-striped")
+    document.getElementById('tabela').appendChild(newForm);
+  });
+  document.querySelector("#submitButton").addEventListener('click', function(event) {
+  event.preventDefault();
+  let forms = Array.from(document.querySelectorAll('.post-form'));
+  let sub_posts = forms.map((form, index) => {
+  return {
+    dev: form.querySelector(`#post_dev`).value,
+    description: form.querySelector(`#post_description`).value,
+    date: form.querySelector(`#post_date`).value,
+    status: form.querySelector(`#post_status`).value,
+    good_bad: form.querySelector(`#post_good_bad`).value,
+  };
+});
+  fetch('/posts', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      'X-CSRF-Token': document.querySelector("meta[name='csrf-token']").content
+    },
+    body: JSON.stringify({ post: { sub_posts_attributes: sub_posts } }) 
+  })
+  .then(response => response.json())
+  .then(data => console.log(data));
+});
+
+</script>
+
+
+):
+1:    <div class="container">
+2:      <h2 class="my-4">New Post</h2>
+3:      <div id="formContainer">
+4:        <table class="table table-bordered m-0" id="tabela">
+5:          <thead>
+6:            <th>
+7:              <p style="display: block; font-weight: bold; font-size:20px; margin-bottom:10px; width: 100%">Desenvolvedor</p>
+8:            </th>
+9:            <th>
+10:              <p style="display: block; font-weight: bold; font-size:20px; margin-bottom:10px; width: 100%">Descrição</p>
+11:            </th>
+12:            <th>
+13:              <p style="display: block; font-weight: bold; font-size:20px; margin-bottom:10px; width: 100%">Bom/Ruim</p>
+14:            </th>
+15:            <th>
+16:              <p style="display: block; font-weight: bold; font-size:20px; margin-bottom:10px; width: 100%">Status</p>
+17:            </th>
+18:            <th>
+19:              <p style="display: block; font-weight: bold; font-size:20px; margin-bottom:10px; width: 100%">Data</p>
+20:            </th>
+21:          </thead>
+22:          <%= render "form", post: @post, show_submit_button: false %>
+23:        </table>
+24:      </div>
+25:    
+26:      <div class="d-flex justify-content-end mt-3">
+27:        <button id="addFormButton" class="btn btn-primary me-3">Adicionar formulário</button>
+28:        <%= form_with(url: posts_path, method: "post", id: "postsForm") do |form| %>
+29:          <%= form.submit "Salvar todos", id: "submitButton" class:"btn btn-success"%>
+30:        <% end %>
+31:      </div>
+32:    
+33:      <div class="d-flex justify-content-end mt-3">
+34:        <%= link_to "Home", posts_path , class:"btn btn-danger "%>
+35:      </div>
+36:    </div>
+37:      
+38:    <script>
+39:      document.getElementById('addFormButton').addEventListener('click', function() {
+40:        var newForm = document.createElement('tbody');
+41:        newForm.innerHTML = `
+42:          <%= render "form", post: @post, show_submit_button: false %>
+43:        `;
+44:        newForm.classList.add("table-striped")
+45:        document.getElementById('tabela').appendChild(newForm);
+46:      });
+47:      document.querySelector("#submitButton").addEventListener('click', function(event) {
+48:      event.preventDefault();
+49:      let forms = Array.from(document.querySelectorAll('.post-form'));
+50:      let sub_posts = forms.map((form, index) => {
+51:      return {
+52:        dev: form.querySelector(`#post_dev`).value,
+53:        description: form.querySelector(`#post_description`).value,
+54:        date: form.querySelector(`#post_date`).value,
+55:        status: form.querySelector(`#post_status`).value,
+56:        good_bad: form.querySelector(`#post_good_bad`).value,
+57:      };
+58:    });
+59:      fetch('/posts', {
+60:        method: 'POST',
+61:        headers: {
+62:          'Content-Type': 'application/json',
+63:          'X-CSRF-Token': document.querySelector("meta[name='csrf-token']").content
+64:        },
+65:        body: JSON.stringify({ post: { sub_posts_attributes: sub_posts } }) 
+66:      })
+67:      .then(response => response.json())
+68:      .then(data => console.log(data));
+69:    });
+70:    
+71:    </script>
+72:    
+  
+app/views/posts/new.html.erb:29: syntax error, unexpected `class', expecting ')'
+app/views/posts/new.html.erb:29: syntax error, unexpected ')', expecting '.' or &. or :: or '['
+app/views/posts/new.html.erb:30: syntax error, unexpected `end', expecting ')'
+app/views/posts/new.html.erb:75: syntax error, unexpected `end', expecting ')'
+app/views/posts/new.html.erb:29: syntax error, unexpected `class', expecting ')'
+app/views/posts/new.html.erb:29: syntax error, unexpected ')', expecting '.' or &. or :: or '['
+app/views/posts/new.html.erb:30: syntax error, unexpected `end', expecting ')'
+app/views/posts/new.html.erb:75: syntax error, unexpected `end', expecting ')'
+app/views/posts/new.html.erb:29: syntax error, unexpected `class', expecting ')'
+app/views/posts/new.html.erb:29: syntax error, unexpected ')', expecting '.' or &. or :: or '['
+app/views/posts/new.html.erb:30: syntax error, unexpected `end', expecting ')'
+app/views/posts/new.html.erb:75: syntax error, unexpected `end', expecting ')'
+app/views/posts/new.html.erb:29: syntax error, unexpected `class', expecting ')'
+app/views/posts/new.html.erb:29: syntax error, unexpected ')', expecting '.' or &. or :: or '['
+app/views/posts/new.html.erb:30: syntax error, unexpected `end', expecting ')'
+app/views/posts/new.html.erb:75: syntax error, unexpected `end', expecting ')'
+app/views/posts/new.html.erb:29: syntax error, unexpected `class', expecting ')'
+app/views/posts/new.html.erb:29: syntax error, unexpected ')', expecting '.' or &. or :: or '['
+app/views/posts/new.html.erb:30: syntax error, unexpected `end', expecting ')'
+app/views/posts/new.html.erb:75: syntax error, unexpected `end', expecting ')'
+app/views/posts/new.html.erb:29: syntax error, unexpected `class', expecting ')'
+app/views/posts/new.html.erb:29: syntax error, unexpected ')', expecting '.' or &. or :: or '['
+app/views/posts/new.html.erb:30: syntax error, unexpected `end', expecting ')'
+app/views/posts/new.html.erb:75: syntax error, unexpected `end', expecting ')'
+Started GET "/posts/new" for ::1 at 2023-07-20 16:09:07 -0300
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 9.7ms | Allocations: 1699)
+  Rendered posts/_form.html.erb (Duration: 1.0ms | Allocations: 929)
+  Rendered posts/new.html.erb within layouts/application (Duration: 46.6ms | Allocations: 3532)
+  Rendered layout layouts/application.html.erb (Duration: 125.1ms | Allocations: 6168)
+Completed 200 OK in 161ms (Views: 136.1ms | ActiveRecord: 0.0ms | Allocations: 7169)
+
+
+Started GET "/" for ::1 at 2023-07-20 16:09:11 -0300
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (2.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:19
+  Rendered posts/index.html.erb within layouts/application (Duration: 13.0ms | Allocations: 5950)
+  Rendered layout layouts/application.html.erb (Duration: 81.6ms | Allocations: 8158)
+Completed 200 OK in 110ms (Views: 80.7ms | ActiveRecord: 2.0ms | Allocations: 8540)
+
+
+Started GET "/posts/new" for ::1 at 2023-07-20 16:09:14 -0300
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 1.0ms | Allocations: 1110)
+  Rendered posts/_form.html.erb (Duration: 0.5ms | Allocations: 929)
+  Rendered posts/new.html.erb within layouts/application (Duration: 2.5ms | Allocations: 2440)
+  Rendered layout layouts/application.html.erb (Duration: 66.8ms | Allocations: 4648)
+Completed 200 OK in 86ms (Views: 67.9ms | ActiveRecord: 0.0ms | Allocations: 4941)
+
+
+Started GET "/" for ::1 at 2023-07-20 16:09:22 -0300
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.8ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:19
+  Rendered posts/index.html.erb within layouts/application (Duration: 6.1ms | Allocations: 5526)
+  Rendered layout layouts/application.html.erb (Duration: 74.8ms | Allocations: 7734)
+Completed 200 OK in 94ms (Views: 74.1ms | ActiveRecord: 1.8ms | Allocations: 8013)
+
+
+Started GET "/posts/new" for ::1 at 2023-07-20 16:09:48 -0300
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 1.0ms | Allocations: 1107)
+  Rendered posts/_form.html.erb (Duration: 0.4ms | Allocations: 929)
+  Rendered posts/new.html.erb within layouts/application (Duration: 2.4ms | Allocations: 2437)
+  Rendered layout layouts/application.html.erb (Duration: 70.5ms | Allocations: 4645)
+Completed 200 OK in 90ms (Views: 71.6ms | ActiveRecord: 0.0ms | Allocations: 4932)
+
+
+Started GET "/posts" for ::1 at 2023-07-20 16:09:54 -0300
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (2.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:19
+  Rendered posts/index.html.erb within layouts/application (Duration: 6.6ms | Allocations: 5541)
+  Rendered layout layouts/application.html.erb (Duration: 78.6ms | Allocations: 7749)
+Completed 200 OK in 100ms (Views: 77.6ms | ActiveRecord: 2.0ms | Allocations: 8028)
+
+
+Started GET "/posts" for ::1 at 2023-07-20 16:10:47 -0300
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.8ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:19
+  Rendered posts/index.html.erb within layouts/application (Duration: 13.6ms | Allocations: 6155)
+  Rendered layout layouts/application.html.erb (Duration: 88.8ms | Allocations: 8777)
+Completed 200 OK in 127ms (Views: 97.7ms | ActiveRecord: 1.8ms | Allocations: 9769)
+
+
+Started GET "/posts/new" for ::1 at 2023-07-20 16:10:48 -0300
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 8.1ms | Allocations: 1588)
+  Rendered posts/_form.html.erb (Duration: 0.7ms | Allocations: 929)
+  Rendered posts/new.html.erb within layouts/application (Duration: 23.5ms | Allocations: 3255)
+  Rendered layout layouts/application.html.erb (Duration: 93.0ms | Allocations: 5464)
+Completed 200 OK in 119ms (Views: 94.0ms | ActiveRecord: 0.0ms | Allocations: 5832)
+
+
+Started GET "/posts/new" for ::1 at 2023-07-20 16:11:52 -0300
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 0.9ms | Allocations: 1132)
+  Rendered posts/_form.html.erb (Duration: 0.5ms | Allocations: 929)
+  Rendered posts/new.html.erb within layouts/application (Duration: 2.6ms | Allocations: 2357)
+  Rendered layout layouts/application.html.erb (Duration: 76.6ms | Allocations: 4574)
+Completed 200 OK in 97ms (Views: 77.6ms | ActiveRecord: 0.0ms | Allocations: 4860)
+
+
+Started GET "/posts" for ::1 at 2023-07-20 16:12:02 -0300
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (2.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:19
+  Rendered posts/index.html.erb within layouts/application (Duration: 6.5ms | Allocations: 5520)
+  Rendered layout layouts/application.html.erb (Duration: 81.7ms | Allocations: 7737)
+Completed 200 OK in 104ms (Views: 80.7ms | ActiveRecord: 2.0ms | Allocations: 8019)
+
+
+Started DELETE "/posts/50" for ::1 at 2023-07-20 16:12:05 -0300
+Processing by PostsController#destroy as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"50"}
+  [1m[36mPost Load (2.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:61:in `set_post'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:50:in `destroy'
+  [1m[36mPost Destroy (4.4ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = ?[0m  [["id", 50]]
+  ↳ app/controllers/posts_controller.rb:50:in `destroy'
+  [1m[36mTRANSACTION (233.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:50:in `destroy'
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 267ms (ActiveRecord: 240.2ms | Allocations: 2988)
+
+
+Started GET "/posts" for ::1 at 2023-07-20 16:12:05 -0300
+Processing by PostsController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.8ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:19
+  Rendered posts/index.html.erb within layouts/application (Duration: 6.1ms | Allocations: 5277)
+  Rendered layout layouts/application.html.erb (Duration: 76.8ms | Allocations: 7594)
+Completed 200 OK in 98ms (Views: 76.0ms | ActiveRecord: 1.8ms | Allocations: 7961)
+
+
