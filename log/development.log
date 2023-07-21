@@ -2611,3 +2611,1273 @@ Processing by PostsController#index as HTML
 Completed 200 OK in 85ms (Views: 67.5ms | ActiveRecord: 1.6ms | Allocations: 5474)
 
 
+Started GET "/" for ::1 at 2023-07-21 10:33:00 -0300
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.8ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:8
+  Rendered posts/index.html.erb within layouts/application (Duration: 4.7ms | Allocations: 2974)
+  Rendered layout layouts/application.html.erb (Duration: 72.1ms | Allocations: 5195)
+Completed 200 OK in 92ms (Views: 71.7ms | ActiveRecord: 1.8ms | Allocations: 5473)
+
+
+Started GET "/" for ::1 at 2023-07-21 10:33:47 -0300
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (2.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:8
+  Rendered posts/index.html.erb within layouts/application (Duration: 36.7ms | Allocations: 3801)
+  Rendered layout layouts/application.html.erb (Duration: 107.4ms | Allocations: 6423)
+Completed 200 OK in 149ms (Views: 117.5ms | ActiveRecord: 2.0ms | Allocations: 7414)
+
+
+Started GET "/" for ::1 at 2023-07-21 10:33:56 -0300
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (2.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:8
+  Rendered posts/index.html.erb within layouts/application (Duration: 35.4ms | Allocations: 3794)
+  Rendered layout layouts/application.html.erb (Duration: 111.8ms | Allocations: 6416)
+Completed 200 OK in 149ms (Views: 120.3ms | ActiveRecord: 2.2ms | Allocations: 7429)
+
+
+Started GET "/" for ::1 at 2023-07-21 10:34:08 -0300
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (2.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:8
+  Rendered posts/index.html.erb within layouts/application (Duration: 33.6ms | Allocations: 3798)
+  Rendered layout layouts/application.html.erb (Duration: 112.2ms | Allocations: 6420)
+Completed 200 OK in 153ms (Views: 121.9ms | ActiveRecord: 2.1ms | Allocations: 7433)
+
+
+Started GET "/" for ::1 at 2023-07-21 10:34:26 -0300
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (2.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:8
+  Rendered posts/index.html.erb within layouts/application (Duration: 34.8ms | Allocations: 3500)
+  Rendered layout layouts/application.html.erb (Duration: 106.4ms | Allocations: 6135)
+Completed 200 OK in 145ms (Views: 115.4ms | ActiveRecord: 2.6ms | Allocations: 7147)
+
+
+Started GET "/" for ::1 at 2023-07-21 10:34:58 -0300
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.8ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:8
+  Rendered posts/index.html.erb within layouts/application (Duration: 31.1ms | Allocations: 3544)
+  Rendered layout layouts/application.html.erb (Duration: 110.1ms | Allocations: 6166)
+Completed 200 OK in 150ms (Views: 119.2ms | ActiveRecord: 1.8ms | Allocations: 7181)
+
+
+Started GET "/" for ::1 at 2023-07-21 10:35:06 -0300
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (2.9ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:8
+  Rendered posts/index.html.erb within layouts/application (Duration: 34.6ms | Allocations: 3503)
+  Rendered layout layouts/application.html.erb (Duration: 119.8ms | Allocations: 6125)
+Completed 200 OK in 160ms (Views: 128.3ms | ActiveRecord: 2.9ms | Allocations: 7137)
+
+
+Started GET "/" for ::1 at 2023-07-21 10:35:16 -0300
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (2.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:8
+  Rendered posts/index.html.erb within layouts/application (Duration: 34.1ms | Allocations: 3518)
+  Rendered layout layouts/application.html.erb (Duration: 119.2ms | Allocations: 6140)
+Completed 200 OK in 159ms (Views: 128.1ms | ActiveRecord: 2.7ms | Allocations: 7152)
+
+
+Started GET "/" for ::1 at 2023-07-21 10:37:26 -0300
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (2.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:8
+  Rendered posts/index.html.erb within layouts/application (Duration: 5.4ms | Allocations: 2677)
+  Rendered layout layouts/application.html.erb (Duration: 71.1ms | Allocations: 4885)
+Completed 200 OK in 91ms (Views: 70.1ms | ActiveRecord: 2.1ms | Allocations: 5185)
+
+
+Started GET "/posts/1/edit" for ::1 at 2023-07-21 10:37:47 -0300
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (2.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:59:in `set_post'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 8.0ms | Allocations: 1764)
+  Rendered posts/edit.html.erb within layouts/application (Duration: 21.7ms | Allocations: 2093)
+  Rendered layout layouts/application.html.erb (Duration: 92.2ms | Allocations: 4293)
+Completed 200 OK in 122ms (Views: 93.2ms | ActiveRecord: 2.1ms | Allocations: 5157)
+
+
+Started GET "/posts/1/edit" for ::1 at 2023-07-21 10:38:20 -0300
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (2.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:59:in `set_post'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 1.0ms | Allocations: 1254)
+  Rendered posts/edit.html.erb within layouts/application (Duration: 1.6ms | Allocations: 1353)
+  Rendered layout layouts/application.html.erb (Duration: 78.4ms | Allocations: 3569)
+Completed 200 OK in 101ms (Views: 79.3ms | ActiveRecord: 2.1ms | Allocations: 4314)
+
+
+Started PATCH "/posts/1" for ::1 at 2023-07-21 10:38:22 -0300
+Processing by PostsController#update as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "post"=>{"dev"=>"Phillippe", "description"=>"oi tudo bem? oi tudo bem? oi tudo bem? oi tudo bem? oi tudo bem? oi tudo bem? oi tudo bem? oi tudo bem? oi tudo bem? oi tudo bem? oi tudo bem? oi tudo bem? oi tudo bem? oi tudo bem? oi tudo bem? oi tudo bem? oi tudo bem? oi tudo bem? oi tudo bem? oi tudo bem? oi tudo bem? oi tudo bem? oi tudo bem? oi tudo bem? oi tudo bem? oi tudo bem? oi tudo bem? oi tudo bem? oi tudo bem? oi tudo bem? oi tudo bem? oi tudo bem? oi tudo bem? oi tudo bem? oi tudo bem? oi tudo bem? oi tudo bem? oi tudo bem? oi tudo bem? oi tudo bem? oi tudo bem? oi tudo bem? oi tudo bem? oi tudo bem? oi tudo bem? oi tudo bem? oi tudo bem? oi tudo bem? oi tudo bem? oi tudo bem? oi tudo bem? oi tudo bem? oi tudo bem? oi tudo bem? oi tudo bem? oi tudo bem? oi tudo bem? oi tudo bem? ", "good_bad"=>"Boa", "status"=>"Parar", "date"=>"2023-07-21"}, "commit"=>"Save", "id"=>"1"}
+  [1m[36mPost Load (1.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:59:in `set_post'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:36:in `block in update'
+  [1m[36mPost Update (4.4ms)[0m  [1m[33mUPDATE "posts" SET "description" = ?, "updated_at" = ? WHERE "posts"."id" = ?[0m  [["description", "oi tudo bem? oi tudo bem? oi tudo bem? oi tudo bem? oi tudo bem? oi tudo bem? oi tudo bem? oi tudo bem? oi tudo bem? oi tudo bem? oi tudo bem? oi tudo bem? oi tudo bem? oi tudo bem? oi tudo bem? oi tudo bem? oi tudo bem? oi tudo bem? oi tudo bem? oi tudo bem? oi tudo bem? oi tudo bem? oi tudo bem? oi tudo bem? oi tudo bem? oi tudo bem? oi tudo bem? oi tudo bem? oi tudo bem? oi tudo bem? oi tudo bem? oi tudo bem? oi tudo bem? oi tudo bem? oi tudo bem? oi tudo bem? oi tudo bem? oi tudo bem? oi tudo bem? oi tudo bem? oi tudo bem? oi tudo bem? oi tudo bem? oi tudo bem? oi tudo bem? oi tudo bem? oi tudo bem? oi tudo bem? oi tudo bem? oi tudo bem? oi tudo bem? oi tudo bem? oi tudo bem? oi tudo bem? oi tudo bem? oi tudo bem? oi tudo bem? oi tudo bem? "], ["updated_at", "2023-07-21 13:38:23.074271"], ["id", 1]]
+  ↳ app/controllers/posts_controller.rb:36:in `block in update'
+  [1m[36mTRANSACTION (20.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:36:in `block in update'
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 51ms (ActiveRecord: 26.5ms | Allocations: 2966)
+
+
+Started GET "/posts" for ::1 at 2023-07-21 10:38:23 -0300
+Processing by PostsController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:8
+  Rendered posts/index.html.erb within layouts/application (Duration: 4.3ms | Allocations: 2746)
+  Rendered layout layouts/application.html.erb (Duration: 68.8ms | Allocations: 4954)
+Completed 200 OK in 88ms (Views: 68.2ms | ActiveRecord: 1.6ms | Allocations: 5280)
+
+
+Started GET "/posts/1/edit" for ::1 at 2023-07-21 10:39:37 -0300
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (1.8ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:59:in `set_post'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 8.0ms | Allocations: 1893)
+  Rendered posts/edit.html.erb within layouts/application (Duration: 21.8ms | Allocations: 2276)
+  Rendered layout layouts/application.html.erb (Duration: 98.8ms | Allocations: 4886)
+Completed 200 OK in 138ms (Views: 110.2ms | ActiveRecord: 1.8ms | Allocations: 6331)
+
+
+Started GET "/posts/1/edit" for ::1 at 2023-07-21 10:39:41 -0300
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (2.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:59:in `set_post'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 1.0ms | Allocations: 1251)
+  Rendered posts/edit.html.erb within layouts/application (Duration: 1.4ms | Allocations: 1350)
+  Rendered layout layouts/application.html.erb (Duration: 73.0ms | Allocations: 3551)
+Completed 200 OK in 98ms (Views: 74.0ms | ActiveRecord: 2.5ms | Allocations: 4369)
+
+
+Started PATCH "/posts/1" for ::1 at 2023-07-21 10:39:43 -0300
+Processing by PostsController#update as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "post"=>{"dev"=>"Phillippe", "description"=>"dasdsa", "good_bad"=>"Boa", "status"=>"Parar", "date"=>"2023-07-21"}, "commit"=>"Save", "id"=>"1"}
+  [1m[36mPost Load (1.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:59:in `set_post'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:36:in `block in update'
+  [1m[36mPost Update (4.6ms)[0m  [1m[33mUPDATE "posts" SET "description" = ?, "updated_at" = ? WHERE "posts"."id" = ?[0m  [["description", "dasdsa"], ["updated_at", "2023-07-21 13:39:43.823477"], ["id", 1]]
+  ↳ app/controllers/posts_controller.rb:36:in `block in update'
+  [1m[36mTRANSACTION (19.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:36:in `block in update'
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 49ms (ActiveRecord: 25.4ms | Allocations: 2964)
+
+
+Started GET "/posts" for ::1 at 2023-07-21 10:39:43 -0300
+Processing by PostsController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (2.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:8
+  Rendered posts/index.html.erb within layouts/application (Duration: 34.5ms | Allocations: 3301)
+  Rendered layout layouts/application.html.erb (Duration: 99.9ms | Allocations: 5522)
+Completed 200 OK in 127ms (Views: 99.1ms | ActiveRecord: 2.2ms | Allocations: 5927)
+
+
+Started GET "/posts" for ::1 at 2023-07-21 10:40:32 -0300
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.8ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:8
+  Rendered posts/index.html.erb within layouts/application (Duration: 4.7ms | Allocations: 2685)
+  Rendered layout layouts/application.html.erb (Duration: 75.4ms | Allocations: 4893)
+Completed 200 OK in 97ms (Views: 74.8ms | ActiveRecord: 1.8ms | Allocations: 5170)
+
+
+Started GET "/posts/1/edit" for ::1 at 2023-07-21 10:42:52 -0300
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (2.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:59:in `set_post'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 0.8ms | Allocations: 1249)
+  Rendered posts/edit.html.erb within layouts/application (Duration: 1.3ms | Allocations: 1348)
+  Rendered layout layouts/application.html.erb (Duration: 74.7ms | Allocations: 3548)
+Completed 200 OK in 101ms (Views: 75.6ms | ActiveRecord: 2.0ms | Allocations: 4294)
+
+
+Started GET "/posts/1/edit" for ::1 at 2023-07-21 10:43:25 -0300
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (1.8ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:59:in `set_post'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 1.0ms | Allocations: 1246)
+  Rendered posts/edit.html.erb within layouts/application (Duration: 1.8ms | Allocations: 1345)
+  Rendered layout layouts/application.html.erb (Duration: 69.2ms | Allocations: 3545)
+Completed 200 OK in 91ms (Views: 70.5ms | ActiveRecord: 1.8ms | Allocations: 4289)
+
+
+Started PATCH "/posts/1" for ::1 at 2023-07-21 10:43:30 -0300
+Processing by PostsController#update as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "post"=>{"dev"=>"Phillippe", "description"=>"dasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsa", "good_bad"=>"Boa", "status"=>"Parar", "date"=>"2023-07-21"}, "commit"=>"Save", "id"=>"1"}
+  [1m[36mPost Load (1.8ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:59:in `set_post'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:36:in `block in update'
+  [1m[36mPost Update (5.0ms)[0m  [1m[33mUPDATE "posts" SET "description" = ?, "updated_at" = ? WHERE "posts"."id" = ?[0m  [["description", "dasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsa"], ["updated_at", "2023-07-21 13:43:30.133712"], ["id", 1]]
+  ↳ app/controllers/posts_controller.rb:36:in `block in update'
+  [1m[36mTRANSACTION (19.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:36:in `block in update'
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 52ms (ActiveRecord: 26.1ms | Allocations: 2829)
+
+
+Started GET "/posts" for ::1 at 2023-07-21 10:43:30 -0300
+Processing by PostsController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (2.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:8
+  Rendered posts/index.html.erb within layouts/application (Duration: 4.9ms | Allocations: 2730)
+  Rendered layout layouts/application.html.erb (Duration: 76.8ms | Allocations: 4938)
+Completed 200 OK in 98ms (Views: 75.9ms | ActiveRecord: 2.0ms | Allocations: 5220)
+
+
+Started GET "/posts/1/edit" for ::1 at 2023-07-21 10:44:02 -0300
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (1.9ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:59:in `set_post'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 0.8ms | Allocations: 1242)
+  Rendered posts/edit.html.erb within layouts/application (Duration: 1.3ms | Allocations: 1341)
+  Rendered layout layouts/application.html.erb (Duration: 74.0ms | Allocations: 3541)
+Completed 200 OK in 97ms (Views: 74.9ms | ActiveRecord: 1.9ms | Allocations: 4288)
+
+
+Started GET "/posts/1/edit" for ::1 at 2023-07-21 10:44:12 -0300
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (1.8ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:59:in `set_post'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 1.1ms | Allocations: 1266)
+  Rendered posts/edit.html.erb within layouts/application (Duration: 1.6ms | Allocations: 1365)
+  Rendered layout layouts/application.html.erb (Duration: 76.4ms | Allocations: 3579)
+Completed 200 OK in 102ms (Views: 77.4ms | ActiveRecord: 1.8ms | Allocations: 4324)
+
+
+Started PATCH "/posts/1" for ::1 at 2023-07-21 10:44:39 -0300
+Processing by PostsController#update as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "post"=>{"dev"=>"Phillippe", "description"=>"dasdsadasdsadasdsadasdsadasdsadasdsadasdsad\nasdsadasdsadasdsadasdsadasdsadasdsadasdsada\nsdsadasdsadasdsadasdsadasdsadasdsadasdsada\nsdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasd\nsadasdsadasdsadasdsadasdsadasdsadasdsadasds\nadasdsadasdsadasdsadasdsadasdsadasdsadasdsa\ndasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasd\nsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsada\nsdsadasdsadasdsadasdsadasdsadasdsadasdsada\nsdsadasdsadasdsadasdsadasdsadasdsadasdsadas\ndsadasdsadasdsadasdsadasdsadasdsadasdsadasd\nsadasdsadasdsadasdsadasd\nsadasdsadasdsadasdsadasdsadasdsadasdsadasd\nsadasdsadasdsadasdsadasdsadasdsadasdsadasd\nsadasdsadasdsadasdsadasdsadasdsa", "good_bad"=>"Boa", "status"=>"Parar", "date"=>"2023-07-21"}, "commit"=>"Save", "id"=>"1"}
+  [1m[36mPost Load (2.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:59:in `set_post'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:36:in `block in update'
+  [1m[36mPost Update (6.0ms)[0m  [1m[33mUPDATE "posts" SET "description" = ?, "updated_at" = ? WHERE "posts"."id" = ?[0m  [["description", "dasdsadasdsadasdsadasdsadasdsadasdsadasdsad\nasdsadasdsadasdsadasdsadasdsadasdsadasdsada\nsdsadasdsadasdsadasdsadasdsadasdsadasdsada\nsdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasd\nsadasdsadasdsadasdsadasdsadasdsadasdsadasds\nadasdsadasdsadasdsadasdsadasdsadasdsadasdsa\ndasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasd\nsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsada\nsdsadasdsadasdsadasdsadasdsadasdsadasdsada\nsdsadasdsadasdsadasdsadasdsadasdsadasdsadas\ndsadasdsadasdsadasdsadasdsadasdsadasdsadasd\nsadasdsadasdsadasdsadasd\nsadasdsadasdsadasdsadasdsadasdsadasdsadasd\nsadasdsadasdsadasdsadasdsadasdsadasdsadasd\nsadasdsadasdsadasdsadasdsadasdsa"], ["updated_at", "2023-07-21 13:44:39.789193"], ["id", 1]]
+  ↳ app/controllers/posts_controller.rb:36:in `block in update'
+  [1m[36mTRANSACTION (21.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:36:in `block in update'
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 56ms (ActiveRecord: 29.8ms | Allocations: 2840)
+
+
+Started GET "/posts" for ::1 at 2023-07-21 10:44:39 -0300
+Processing by PostsController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (2.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:8
+  Rendered posts/index.html.erb within layouts/application (Duration: 4.9ms | Allocations: 2709)
+  Rendered layout layouts/application.html.erb (Duration: 75.8ms | Allocations: 4917)
+Completed 200 OK in 95ms (Views: 74.9ms | ActiveRecord: 2.0ms | Allocations: 5199)
+
+
+Started GET "/posts/1/edit" for ::1 at 2023-07-21 10:45:11 -0300
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (2.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:59:in `set_post'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 1.0ms | Allocations: 1257)
+  Rendered posts/edit.html.erb within layouts/application (Duration: 1.5ms | Allocations: 1356)
+  Rendered layout layouts/application.html.erb (Duration: 71.9ms | Allocations: 3556)
+Completed 200 OK in 96ms (Views: 72.8ms | ActiveRecord: 2.1ms | Allocations: 4303)
+
+
+Started GET "/posts/1/edit" for ::1 at 2023-07-21 10:45:15 -0300
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (1.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:59:in `set_post'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 1.1ms | Allocations: 1260)
+  Rendered posts/edit.html.erb within layouts/application (Duration: 1.5ms | Allocations: 1359)
+  Rendered layout layouts/application.html.erb (Duration: 65.0ms | Allocations: 3559)
+Completed 200 OK in 86ms (Views: 65.9ms | ActiveRecord: 1.6ms | Allocations: 4303)
+
+
+Started PATCH "/posts/1" for ::1 at 2023-07-21 10:45:20 -0300
+Processing by PostsController#update as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "post"=>{"dev"=>"Phillippe", "description"=>"dasdsadasdsadasdsadasdsadasdsadasdsada", "good_bad"=>"Boa", "status"=>"Parar", "date"=>"2023-07-21"}, "commit"=>"Save", "id"=>"1"}
+  [1m[36mPost Load (1.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:59:in `set_post'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:36:in `block in update'
+  [1m[36mPost Update (5.4ms)[0m  [1m[33mUPDATE "posts" SET "description" = ?, "updated_at" = ? WHERE "posts"."id" = ?[0m  [["description", "dasdsadasdsadasdsadasdsadasdsadasdsada"], ["updated_at", "2023-07-21 13:45:21.048773"], ["id", 1]]
+  ↳ app/controllers/posts_controller.rb:36:in `block in update'
+  [1m[36mTRANSACTION (19.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:36:in `block in update'
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 52ms (ActiveRecord: 26.6ms | Allocations: 2806)
+
+
+Started GET "/posts" for ::1 at 2023-07-21 10:45:21 -0300
+Processing by PostsController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (2.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:8
+  Rendered posts/index.html.erb within layouts/application (Duration: 5.2ms | Allocations: 2704)
+  Rendered layout layouts/application.html.erb (Duration: 77.1ms | Allocations: 4915)
+Completed 200 OK in 98ms (Views: 76.1ms | ActiveRecord: 2.2ms | Allocations: 5197)
+
+
+Started GET "/posts" for ::1 at 2023-07-21 10:46:37 -0300
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (2.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:8
+  Rendered posts/index.html.erb within layouts/application (Duration: 5.2ms | Allocations: 2695)
+  Rendered layout layouts/application.html.erb (Duration: 76.4ms | Allocations: 4903)
+Completed 200 OK in 97ms (Views: 75.2ms | ActiveRecord: 2.3ms | Allocations: 5180)
+
+
+Started GET "/posts/1/edit" for ::1 at 2023-07-21 10:46:45 -0300
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (1.9ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:59:in `set_post'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 0.9ms | Allocations: 1247)
+  Rendered posts/edit.html.erb within layouts/application (Duration: 1.4ms | Allocations: 1346)
+  Rendered layout layouts/application.html.erb (Duration: 75.4ms | Allocations: 3546)
+Completed 200 OK in 99ms (Views: 76.4ms | ActiveRecord: 1.9ms | Allocations: 4292)
+
+
+Started GET "/" for ::1 at 2023-07-21 10:49:53 -0300
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (2.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:8
+  Rendered posts/index.html.erb within layouts/application (Duration: 5.2ms | Allocations: 2707)
+  Rendered layout layouts/application.html.erb (Duration: 70.1ms | Allocations: 4915)
+Completed 200 OK in 88ms (Views: 69.0ms | ActiveRecord: 2.1ms | Allocations: 5194)
+
+
+Started GET "/posts/new" for ::1 at 2023-07-21 10:49:53 -0300
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 7.8ms | Allocations: 1587)
+  Rendered posts/_form.html.erb (Duration: 0.5ms | Allocations: 929)
+  Rendered posts/new.html.erb within layouts/application (Duration: 17.1ms | Allocations: 3203)
+  Rendered layout layouts/application.html.erb (Duration: 89.3ms | Allocations: 5412)
+Completed 200 OK in 116ms (Views: 90.6ms | ActiveRecord: 0.0ms | Allocations: 5757)
+
+
+Started GET "/" for ::1 at 2023-07-21 10:58:01 -0300
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (2.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:8
+  Rendered posts/index.html.erb within layouts/application (Duration: 13.6ms | Allocations: 2891)
+  Rendered layout layouts/application.html.erb (Duration: 83.4ms | Allocations: 5099)
+Completed 200 OK in 106ms (Views: 84.5ms | ActiveRecord: 4.8ms | Allocations: 5377)
+
+
+Started GET "/posts/1/edit" for ::1 at 2023-07-21 10:59:24 -0300
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (2.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:59:in `set_post'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 1.1ms | Allocations: 1238)
+  Rendered posts/edit.html.erb within layouts/application (Duration: 1.5ms | Allocations: 1337)
+  Rendered layout layouts/application.html.erb (Duration: 71.4ms | Allocations: 3550)
+Completed 200 OK in 94ms (Views: 72.4ms | ActiveRecord: 2.1ms | Allocations: 4335)
+
+
+Started GET "/posts" for ::1 at 2023-07-21 10:59:32 -0300
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.8ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:8
+  Rendered posts/index.html.erb within layouts/application (Duration: 4.8ms | Allocations: 2701)
+  Rendered layout layouts/application.html.erb (Duration: 94.2ms | Allocations: 4909)
+Completed 200 OK in 118ms (Views: 93.7ms | ActiveRecord: 1.8ms | Allocations: 5188)
+
+
+Started GET "/posts/new" for ::1 at 2023-07-21 10:59:34 -0300
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 0.8ms | Allocations: 1128)
+  Rendered posts/_form.html.erb (Duration: 0.7ms | Allocations: 929)
+  Rendered posts/new.html.erb within layouts/application (Duration: 2.3ms | Allocations: 2353)
+  Rendered layout layouts/application.html.erb (Duration: 65.2ms | Allocations: 4561)
+Completed 200 OK in 84ms (Views: 66.2ms | ActiveRecord: 0.0ms | Allocations: 4849)
+
+
+Started GET "/busca" for ::1 at 2023-07-21 11:01:52 -0300
+Processing by BuscaController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering busca/index.html.erb within layouts/application
+  Rendered busca/index.html.erb within layouts/application (Duration: 7.4ms | Allocations: 1273)
+  Rendered layout layouts/application.html.erb (Duration: 80.4ms | Allocations: 3906)
+Completed 200 OK in 112ms (Views: 85.7ms | ActiveRecord: 0.0ms | Allocations: 4598)
+
+
+Started GET "/busca" for ::1 at 2023-07-21 11:03:08 -0300
+Processing by BuscaController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering busca/index.html.erb within layouts/application
+  Rendered busca/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 606)
+  Rendered layout layouts/application.html.erb (Duration: 73.8ms | Allocations: 2982)
+Completed 200 OK in 96ms (Views: 74.9ms | ActiveRecord: 0.0ms | Allocations: 3268)
+
+
+Started GET "/busca" for ::1 at 2023-07-21 11:03:09 -0300
+Processing by BuscaController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering busca/index.html.erb within layouts/application
+  Rendered busca/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 606)
+  Rendered layout layouts/application.html.erb (Duration: 70.9ms | Allocations: 2997)
+Completed 200 OK in 92ms (Views: 72.0ms | ActiveRecord: 0.0ms | Allocations: 3264)
+
+
+Started GET "/" for ::1 at 2023-07-21 11:03:10 -0300
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.8ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:8
+  Rendered posts/index.html.erb within layouts/application (Duration: 4.8ms | Allocations: 2801)
+  Rendered layout layouts/application.html.erb (Duration: 74.0ms | Allocations: 5022)
+Completed 200 OK in 96ms (Views: 74.3ms | ActiveRecord: 1.8ms | Allocations: 5306)
+
+
+Started GET "/busca" for ::1 at 2023-07-21 11:03:11 -0300
+Processing by BuscaController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering busca/index.html.erb within layouts/application
+  Rendered busca/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 606)
+  Rendered layout layouts/application.html.erb (Duration: 64.4ms | Allocations: 2982)
+Completed 200 OK in 82ms (Views: 65.5ms | ActiveRecord: 0.0ms | Allocations: 3249)
+
+
+Started GET "/" for ::1 at 2023-07-21 11:03:12 -0300
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (2.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:8
+  Rendered posts/index.html.erb within layouts/application (Duration: 5.3ms | Allocations: 2701)
+  Rendered layout layouts/application.html.erb (Duration: 83.5ms | Allocations: 4909)
+Completed 200 OK in 105ms (Views: 82.2ms | ActiveRecord: 2.3ms | Allocations: 5188)
+
+
+Started GET "/posts/new" for ::1 at 2023-07-21 11:03:54 -0300
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 1.1ms | Allocations: 1130)
+  Rendered posts/_form.html.erb (Duration: 0.5ms | Allocations: 929)
+  Rendered posts/new.html.erb within layouts/application (Duration: 2.6ms | Allocations: 2360)
+  Rendered layout layouts/application.html.erb (Duration: 70.4ms | Allocations: 4568)
+Completed 200 OK in 87ms (Views: 71.4ms | ActiveRecord: 0.0ms | Allocations: 4861)
+
+
+Started GET "/busca" for ::1 at 2023-07-21 11:03:56 -0300
+Processing by BuscaController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering busca/index.html.erb within layouts/application
+  Rendered busca/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 606)
+  Rendered layout layouts/application.html.erb (Duration: 68.8ms | Allocations: 2991)
+Completed 200 OK in 89ms (Views: 69.9ms | ActiveRecord: 0.0ms | Allocations: 3258)
+
+
+Started GET "/" for ::1 at 2023-07-21 11:03:58 -0300
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.8ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:8
+  Rendered posts/index.html.erb within layouts/application (Duration: 4.4ms | Allocations: 2701)
+  Rendered layout layouts/application.html.erb (Duration: 77.5ms | Allocations: 4912)
+Completed 200 OK in 98ms (Views: 76.9ms | ActiveRecord: 1.8ms | Allocations: 5191)
+
+
+Started GET "/" for ::1 at 2023-07-21 11:04:00 -0300
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (2.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:8
+  Rendered posts/index.html.erb within layouts/application (Duration: 7.2ms | Allocations: 2707)
+  Rendered layout layouts/application.html.erb (Duration: 74.1ms | Allocations: 4928)
+Completed 200 OK in 92ms (Views: 72.9ms | ActiveRecord: 2.3ms | Allocations: 5208)
+
+
+Started GET "/busca" for ::1 at 2023-07-21 11:04:01 -0300
+Processing by BuscaController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering busca/index.html.erb within layouts/application
+  Rendered busca/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 606)
+  Rendered layout layouts/application.html.erb (Duration: 69.1ms | Allocations: 2995)
+Completed 200 OK in 89ms (Views: 70.1ms | ActiveRecord: 0.0ms | Allocations: 3263)
+
+
+Started GET "/" for ::1 at 2023-07-21 11:04:02 -0300
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:8
+  Rendered posts/index.html.erb within layouts/application (Duration: 4.2ms | Allocations: 2695)
+  Rendered layout layouts/application.html.erb (Duration: 68.7ms | Allocations: 4903)
+Completed 200 OK in 86ms (Views: 68.2ms | ActiveRecord: 1.6ms | Allocations: 5182)
+
+
+Started GET "/" for ::1 at 2023-07-21 11:04:05 -0300
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (2.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:8
+  Rendered posts/index.html.erb within layouts/application (Duration: 5.3ms | Allocations: 2686)
+  Rendered layout layouts/application.html.erb (Duration: 74.8ms | Allocations: 4894)
+Completed 200 OK in 95ms (Views: 73.6ms | ActiveRecord: 2.1ms | Allocations: 5173)
+
+
+Started GET "/busca" for ::1 at 2023-07-21 11:04:21 -0300
+Processing by BuscaController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering busca/index.html.erb within layouts/application
+  Rendered busca/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 606)
+  Rendered layout layouts/application.html.erb (Duration: 69.8ms | Allocations: 2986)
+Completed 200 OK in 89ms (Views: 70.8ms | ActiveRecord: 0.0ms | Allocations: 3254)
+
+
+Started GET "/" for ::1 at 2023-07-21 11:04:22 -0300
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:8
+  Rendered posts/index.html.erb within layouts/application (Duration: 4.2ms | Allocations: 2710)
+  Rendered layout layouts/application.html.erb (Duration: 67.8ms | Allocations: 4918)
+Completed 200 OK in 88ms (Views: 67.3ms | ActiveRecord: 1.6ms | Allocations: 5197)
+
+
+Started GET "/" for ::1 at 2023-07-21 11:04:25 -0300
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (2.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:8
+  Rendered posts/index.html.erb within layouts/application (Duration: 4.9ms | Allocations: 2689)
+  Rendered layout layouts/application.html.erb (Duration: 74.4ms | Allocations: 4900)
+Completed 200 OK in 94ms (Views: 73.3ms | ActiveRecord: 2.0ms | Allocations: 5179)
+
+
+Started GET "/busca" for ::1 at 2023-07-21 11:04:26 -0300
+Processing by BuscaController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering busca/index.html.erb within layouts/application
+  Rendered busca/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 606)
+  Rendered layout layouts/application.html.erb (Duration: 63.8ms | Allocations: 3007)
+Completed 200 OK in 83ms (Views: 64.8ms | ActiveRecord: 0.0ms | Allocations: 3274)
+
+
+Started GET "/" for ::1 at 2023-07-21 11:04:27 -0300
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:8
+  Rendered posts/index.html.erb within layouts/application (Duration: 4.6ms | Allocations: 2689)
+  Rendered layout layouts/application.html.erb (Duration: 74.7ms | Allocations: 4897)
+Completed 200 OK in 95ms (Views: 74.3ms | ActiveRecord: 1.7ms | Allocations: 5176)
+
+
+Started GET "/busca" for ::1 at 2023-07-21 11:04:29 -0300
+Processing by BuscaController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering busca/index.html.erb within layouts/application
+  Rendered busca/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 606)
+  Rendered layout layouts/application.html.erb (Duration: 68.0ms | Allocations: 2994)
+Completed 200 OK in 89ms (Views: 69.0ms | ActiveRecord: 0.0ms | Allocations: 3261)
+
+
+Started GET "/" for ::1 at 2023-07-21 11:04:30 -0300
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:8
+  Rendered posts/index.html.erb within layouts/application (Duration: 4.3ms | Allocations: 2701)
+  Rendered layout layouts/application.html.erb (Duration: 71.5ms | Allocations: 4909)
+Completed 200 OK in 90ms (Views: 71.0ms | ActiveRecord: 1.6ms | Allocations: 5188)
+
+
+Started GET "/" for ::1 at 2023-07-21 11:09:21 -0300
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (2.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:8
+  Rendered posts/index.html.erb within layouts/application (Duration: 36.7ms | Allocations: 3516)
+  Rendered layout layouts/application.html.erb (Duration: 118.0ms | Allocations: 6139)
+Completed 200 OK in 160ms (Views: 127.1ms | ActiveRecord: 2.3ms | Allocations: 7145)
+
+
+Started GET "/" for ::1 at 2023-07-21 11:13:01 -0300
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (2.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:8
+  Rendered posts/index.html.erb within layouts/application (Duration: 35.8ms | Allocations: 2807)
+  Rendered layout layouts/application.html.erb (Duration: 36.9ms | Allocations: 2892)
+Completed 500 Internal Server Error in 80ms (ActiveRecord: 2.4ms | Allocations: 3876)
+
+
+  
+ActionView::Template::Error (The asset "../../assets/images/excluir.svg" is not present in the asset pipeline.
+):
+    39:                           <td><%= post.date.strftime("%d/%m/%Y") %></td>
+    40:                           <td class="d-flex">
+    41:                             <%= link_to 'Edit', edit_post_path(post), class:"btn btn-outline-dark me-2"%>
+    42:                             <%= button_to image_tag("../../assets/images/excluir.svg"), post, method: :delete, class:"btn btn-outline-danger button-delete", onclick: "return confirm('Tem certeza que deseja excluir este post?')" %>
+    43:                           </td>
+    44:                         </tbody>
+    45:                       </tr>  
+  
+app/views/posts/index.html.erb:42
+app/views/posts/index.html.erb:31
+app/views/posts/index.html.erb:8
+Started GET "/" for ::1 at 2023-07-21 11:13:07 -0300
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (Duration: 20.6ms | Allocations: 1524)
+  Rendered layout layouts/application.html.erb (Duration: 21.4ms | Allocations: 1613)
+Completed 500 Internal Server Error in 60ms (ActiveRecord: 0.0ms | Allocations: 2601)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <div class="container">
+  <% if notice %>
+    <div class="alert alert-success" role="alert"><%= notice %></div>
+  <% end %>
+  <h1>Reunião</h1>
+  <div id="posts">
+    <% datereunion = [] %> 
+    <% @posts.each do |reuniondate| %>
+      <% if !datereunion.include?(reuniondate.date) %>
+        <% datereunion.push(reuniondate.date)%>
+        <div class="accordion mb-3" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" style="box-shadow: none!important;" type="button" data-bs-toggle="collapse" data-bs-target="#<%=reuniondate.date%>" aria-expanded="false" aria-controls=<%=reuniondate.date%>>
+                <strong><%= reuniondate.date.strftime("%d/%m/%Y") %></strong>
+              </button>
+            </h2>
+            <div id=<%= reuniondate.date%> class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body" >
+                <table class="table table-striped table-bordered table-hover">
+                  <thead>
+                    <tr>
+                      <th>Dev</th>
+                      <th>Description</th>
+                      <th>Status</th>
+                      <th>Good/Bad</th>
+                      <th>Date</th>
+                      <th colspan="3"></th>
+                    </tr>
+                  </thead>
+                  <% @posts.each do |post| %>
+                    <% if post.date == reuniondate.date %>
+                      <tr>
+                        <tbody>
+                          <td><%= post.dev %></td>
+                          <td><%= post.description %></td>
+                          <td><%= post.status %></td>
+                          <td><%= post.good_bad %></td>
+                          <td><%= post.date.strftime("%d/%m/%Y") %></td>
+                          <td class="d-flex">
+                            <%= link_to 'Edit', edit_post_path(post), class:"btn btn-outline-dark me-2"%>
+                            <%= button_to image_tag(../../assets/images/excluir.svg), post, method: :delete, class:"btn btn-outline-danger button-delete", onclick: "return confirm('Tem certeza que deseja excluir este post?')" %>
+                          </td>
+                        </tbody>
+                      </tr>  
+                    <% end %>
+                  <% end %>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      <% end %> 
+     <% end %>
+
+  </div>
+  <%= link_to "New post", new_post_path, class:"btn btn-primary btn-small", style:"margin-top: 0.7rem;" %>
+</div>
+
+
+
+):
+1:    <div class="container">
+2:      <% if notice %>
+3:        <div class="alert alert-success" role="alert"><%= notice %></div>
+4:      <% end %>
+5:      <h1>Reunião</h1>
+6:      <div id="posts">
+7:        <% datereunion = [] %> 
+8:        <% @posts.each do |reuniondate| %>
+9:          <% if !datereunion.include?(reuniondate.date) %>
+10:            <% datereunion.push(reuniondate.date)%>
+11:            <div class="accordion mb-3" id="accordionExample">
+12:              <div class="accordion-item">
+13:                <h2 class="accordion-header">
+14:                  <button class="accordion-button collapsed" style="box-shadow: none!important;" type="button" data-bs-toggle="collapse" data-bs-target="#<%=reuniondate.date%>" aria-expanded="false" aria-controls=<%=reuniondate.date%>>
+15:                    <strong><%= reuniondate.date.strftime("%d/%m/%Y") %></strong>
+16:                  </button>
+17:                </h2>
+18:                <div id=<%= reuniondate.date%> class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+19:                  <div class="accordion-body" >
+20:                    <table class="table table-striped table-bordered table-hover">
+21:                      <thead>
+22:                        <tr>
+23:                          <th>Dev</th>
+24:                          <th>Description</th>
+25:                          <th>Status</th>
+26:                          <th>Good/Bad</th>
+27:                          <th>Date</th>
+28:                          <th colspan="3"></th>
+29:                        </tr>
+30:                      </thead>
+31:                      <% @posts.each do |post| %>
+32:                        <% if post.date == reuniondate.date %>
+33:                          <tr>
+34:                            <tbody>
+35:                              <td><%= post.dev %></td>
+36:                              <td><%= post.description %></td>
+37:                              <td><%= post.status %></td>
+38:                              <td><%= post.good_bad %></td>
+39:                              <td><%= post.date.strftime("%d/%m/%Y") %></td>
+40:                              <td class="d-flex">
+41:                                <%= link_to 'Edit', edit_post_path(post), class:"btn btn-outline-dark me-2"%>
+42:                                <%= button_to image_tag(../../assets/images/excluir.svg), post, method: :delete, class:"btn btn-outline-danger button-delete", onclick: "return confirm('Tem certeza que deseja excluir este post?')" %>
+43:                              </td>
+44:                            </tbody>
+45:                          </tr>  
+46:                        <% end %>
+47:                      <% end %>
+48:                    </table>
+49:                  </div>
+50:                </div>
+51:              </div>
+52:            </div>
+53:          <% end %> 
+54:         <% end %>
+55:    
+56:      </div>
+57:      <%= link_to "New post", new_post_path, class:"btn btn-primary btn-small", style:"margin-top: 0.7rem;" %>
+58:    </div>
+59:    
+60:    
+  
+app/views/posts/index.html.erb:42: unknown regexp options - at
+app/views/posts/index.html.erb:42: unknown regexp options - at
+app/views/posts/index.html.erb:42: unknown regexp options - at
+app/views/posts/index.html.erb:42: unknown regexp options - at
+app/views/posts/index.html.erb:42: unknown regexp options - at
+app/views/posts/index.html.erb:42: unknown regexp options - at
+Started GET "/" for ::1 at 2023-07-21 11:13:16 -0300
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:8
+  Rendered posts/index.html.erb within layouts/application (Duration: 12.5ms | Allocations: 2791)
+  Rendered layout layouts/application.html.erb (Duration: 13.5ms | Allocations: 2876)
+Completed 500 Internal Server Error in 51ms (ActiveRecord: 1.7ms | Allocations: 3850)
+
+
+  
+ActionView::Template::Error (The asset "../../assets/images/excluir.svg" is not present in the asset pipeline.
+):
+    39:                           <td><%= post.date.strftime("%d/%m/%Y") %></td>
+    40:                           <td class="d-flex">
+    41:                             <%= link_to 'Edit', edit_post_path(post), class:"btn btn-outline-dark me-2"%>
+    42:                             <%= button_to image_tag("../../assets/images/excluir.svg"), post, method: :delete, class:"btn btn-outline-danger button-delete", onclick: "return confirm('Tem certeza que deseja excluir este post?')" %>
+    43:                           </td>
+    44:                         </tbody>
+    45:                       </tr>  
+  
+app/views/posts/index.html.erb:42
+app/views/posts/index.html.erb:31
+app/views/posts/index.html.erb:8
+Started GET "/" for ::1 at 2023-07-21 11:14:58 -0300
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (2.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:8
+  Rendered posts/index.html.erb within layouts/application (Duration: 34.4ms | Allocations: 2630)
+  Rendered layout layouts/application.html.erb (Duration: 35.2ms | Allocations: 2715)
+Completed 500 Internal Server Error in 78ms (ActiveRecord: 2.4ms | Allocations: 3692)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 3, expected 1..2)):
+    39:                           <td><%= post.date.strftime("%d/%m/%Y") %></td>
+    40:                           <td class="d-flex">
+    41:                             <%= link_to 'Edit', edit_post_path(post), class:"btn btn-outline-dark me-2"%>
+    42:                             <%= button_to image_tag "../../assets/images/excluir.svg", post, method: :delete, class:"btn btn-outline-danger button-delete", onclick: "return confirm('Tem certeza que deseja excluir este post?')" %>
+    43:                           </td>
+    44:                         </tbody>
+    45:                       </tr>  
+  
+app/views/posts/index.html.erb:42
+app/views/posts/index.html.erb:31
+app/views/posts/index.html.erb:8
+Started GET "/" for ::1 at 2023-07-21 11:15:13 -0300
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.9ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:8
+  Rendered posts/index.html.erb within layouts/application (Duration: 12.2ms | Allocations: 2791)
+  Rendered layout layouts/application.html.erb (Duration: 13.0ms | Allocations: 2876)
+Completed 500 Internal Server Error in 55ms (ActiveRecord: 1.9ms | Allocations: 3850)
+
+
+  
+ActionView::Template::Error (The asset "../../assets/images/excluir.svg" is not present in the asset pipeline.
+):
+    39:                           <td><%= post.date.strftime("%d/%m/%Y") %></td>
+    40:                           <td class="d-flex">
+    41:                             <%= link_to 'Edit', edit_post_path(post), class:"btn btn-outline-dark me-2"%>
+    42:                             <%= button_to image_tag("../../assets/images/excluir.svg"), post, method: :delete, class:"btn btn-outline-danger button-delete", onclick: "return confirm('Tem certeza que deseja excluir este post?')" %>
+    43:                           </td>
+    44:                         </tbody>
+    45:                       </tr>  
+  
+app/views/posts/index.html.erb:42
+app/views/posts/index.html.erb:31
+app/views/posts/index.html.erb:8
+Started GET "/" for ::1 at 2023-07-21 11:15:14 -0300
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.8ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:8
+  Rendered posts/index.html.erb within layouts/application (Duration: 3.7ms | Allocations: 1967)
+  Rendered layout layouts/application.html.erb (Duration: 4.6ms | Allocations: 2046)
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 1.8ms | Allocations: 2321)
+
+
+  
+ActionView::Template::Error (The asset "../../assets/images/excluir.svg" is not present in the asset pipeline.
+):
+    39:                           <td><%= post.date.strftime("%d/%m/%Y") %></td>
+    40:                           <td class="d-flex">
+    41:                             <%= link_to 'Edit', edit_post_path(post), class:"btn btn-outline-dark me-2"%>
+    42:                             <%= button_to image_tag("../../assets/images/excluir.svg"), post, method: :delete, class:"btn btn-outline-danger button-delete", onclick: "return confirm('Tem certeza que deseja excluir este post?')" %>
+    43:                           </td>
+    44:                         </tbody>
+    45:                       </tr>  
+  
+app/views/posts/index.html.erb:42
+app/views/posts/index.html.erb:31
+app/views/posts/index.html.erb:8
+Started GET "/" for ::1 at 2023-07-21 11:15:20 -0300
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.8ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:8
+  Rendered posts/index.html.erb within layouts/application (Duration: 32.3ms | Allocations: 2792)
+  Rendered layout layouts/application.html.erb (Duration: 33.2ms | Allocations: 2877)
+Completed 500 Internal Server Error in 71ms (ActiveRecord: 1.8ms | Allocations: 3829)
+
+
+  
+ActionView::Template::Error (The asset "../../assets/images/excluir" is not present in the asset pipeline.
+):
+    39:                           <td><%= post.date.strftime("%d/%m/%Y") %></td>
+    40:                           <td class="d-flex">
+    41:                             <%= link_to 'Edit', edit_post_path(post), class:"btn btn-outline-dark me-2"%>
+    42:                             <%= button_to image_tag("../../assets/images/excluir"), post, method: :delete, class:"btn btn-outline-danger button-delete", onclick: "return confirm('Tem certeza que deseja excluir este post?')" %>
+    43:                           </td>
+    44:                         </tbody>
+    45:                       </tr>  
+  
+app/views/posts/index.html.erb:42
+app/views/posts/index.html.erb:31
+app/views/posts/index.html.erb:8
+Started GET "/" for ::1 at 2023-07-21 11:17:43 -0300
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (2.9ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:8
+  Rendered posts/index.html.erb within layouts/application (Duration: 37.6ms | Allocations: 2792)
+  Rendered layout layouts/application.html.erb (Duration: 38.6ms | Allocations: 2877)
+Completed 500 Internal Server Error in 78ms (ActiveRecord: 2.9ms | Allocations: 3851)
+
+
+  
+ActionView::Template::Error (The asset "../../assets/images/excluir.png" is not present in the asset pipeline.
+):
+    39:                           <td><%= post.date.strftime("%d/%m/%Y") %></td>
+    40:                           <td class="d-flex">
+    41:                             <%= link_to 'Edit', edit_post_path(post), class:"btn btn-outline-dark me-2"%>
+    42:                             <%= button_to image_tag("../../assets/images/excluir.png"), post, method: :delete, class:"btn btn-outline-danger button-delete", onclick: "return confirm('Tem certeza que deseja excluir este post?')" %>
+    43:                           </td>
+    44:                         </tbody>
+    45:                       </tr>  
+  
+app/views/posts/index.html.erb:42
+app/views/posts/index.html.erb:31
+app/views/posts/index.html.erb:8
+Started GET "/" for ::1 at 2023-07-21 11:18:43 -0300
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:8
+  Rendered posts/index.html.erb within layouts/application (Duration: 3.8ms | Allocations: 1969)
+  Rendered layout layouts/application.html.erb (Duration: 4.4ms | Allocations: 2048)
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 1.7ms | Allocations: 2323)
+
+
+  
+ActionView::Template::Error (The asset "../../assets/images/excluir.png" is not present in the asset pipeline.
+):
+    39:                           <td><%= post.date.strftime("%d/%m/%Y") %></td>
+    40:                           <td class="d-flex">
+    41:                             <%= link_to 'Edit', edit_post_path(post), class:"btn btn-outline-dark me-2"%>
+    42:                             <%= button_to image_tag("../../assets/images/excluir.png"), post, method: :delete, class:"btn btn-outline-danger button-delete", onclick: "return confirm('Tem certeza que deseja excluir este post?')" %>
+    43:                           </td>
+    44:                         </tbody>
+    45:                       </tr>  
+  
+app/views/posts/index.html.erb:42
+app/views/posts/index.html.erb:31
+app/views/posts/index.html.erb:8
+Started GET "/" for ::1 at 2023-07-21 11:19:01 -0300
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:8
+  Rendered posts/index.html.erb within layouts/application (Duration: 1107.1ms | Allocations: 30217)
+  Rendered layout layouts/application.html.erb (Duration: 1172.6ms | Allocations: 32610)
+Completed 200 OK in 1210ms (Views: 1181.5ms | ActiveRecord: 1.7ms | Allocations: 33592)
+
+
+Started GET "/" for ::1 at 2023-07-21 11:19:02 -0300
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (2.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:8
+  Rendered posts/index.html.erb within layouts/application (Duration: 50.4ms | Allocations: 4540)
+  Rendered layout layouts/application.html.erb (Duration: 112.3ms | Allocations: 6638)
+Completed 200 OK in 132ms (Views: 111.4ms | ActiveRecord: 2.0ms | Allocations: 6938)
+
+
+Started GET "/" for ::1 at 2023-07-21 11:19:20 -0300
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (2.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:8
+  Rendered posts/index.html.erb within layouts/application (Duration: 113.0ms | Allocations: 7182)
+  Rendered layout layouts/application.html.erb (Duration: 180.8ms | Allocations: 9573)
+Completed 200 OK in 222ms (Views: 190.0ms | ActiveRecord: 2.7ms | Allocations: 10562)
+
+
+Started GET "/" for ::1 at 2023-07-21 11:19:27 -0300
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (2.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:8
+  Rendered posts/index.html.erb within layouts/application (Duration: 109.6ms | Allocations: 7268)
+  Rendered layout layouts/application.html.erb (Duration: 177.1ms | Allocations: 9671)
+Completed 200 OK in 217ms (Views: 185.5ms | ActiveRecord: 2.5ms | Allocations: 10687)
+
+
+Started GET "/" for ::1 at 2023-07-21 14:05:10 -0300
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.9ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:8
+  Rendered posts/index.html.erb within layouts/application (Duration: 80.9ms | Allocations: 6478)
+  Rendered layout layouts/application.html.erb (Duration: 138.9ms | Allocations: 8576)
+Completed 200 OK in 158ms (Views: 139.9ms | ActiveRecord: 4.1ms | Allocations: 8873)
+
+
+Started DELETE "/posts/6" for ::1 at 2023-07-21 14:07:38 -0300
+Processing by PostsController#destroy as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"6"}
+  [1m[36mPost Load (2.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:59:in `set_post'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:48:in `destroy'
+  [1m[36mPost Destroy (4.5ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = ?[0m  [["id", 6]]
+  ↳ app/controllers/posts_controller.rb:48:in `destroy'
+  [1m[36mTRANSACTION (22.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:48:in `destroy'
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 54ms (ActiveRecord: 29.1ms | Allocations: 2546)
+
+
+Started GET "/posts" for ::1 at 2023-07-21 14:07:38 -0300
+Processing by PostsController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:8
+  Rendered posts/index.html.erb within layouts/application (Duration: 77.2ms | Allocations: 5489)
+  Rendered layout layouts/application.html.erb (Duration: 139.7ms | Allocations: 7587)
+Completed 200 OK in 160ms (Views: 138.9ms | ActiveRecord: 1.7ms | Allocations: 7914)
+
+
+Started DELETE "/posts/1" for ::1 at 2023-07-21 14:07:45 -0300
+Processing by PostsController#destroy as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"1"}
+  [1m[36mPost Load (1.9ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:59:in `set_post'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:48:in `destroy'
+  [1m[36mPost Destroy (4.9ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = ?[0m  [["id", 1]]
+  ↳ app/controllers/posts_controller.rb:48:in `destroy'
+  [1m[36mTRANSACTION (19.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:48:in `destroy'
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 51ms (ActiveRecord: 26.1ms | Allocations: 2385)
+
+
+Started GET "/posts" for ::1 at 2023-07-21 14:07:45 -0300
+Processing by PostsController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.9ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:8
+  Rendered posts/index.html.erb within layouts/application (Duration: 78.8ms | Allocations: 4655)
+  Rendered layout layouts/application.html.erb (Duration: 137.7ms | Allocations: 6753)
+Completed 200 OK in 158ms (Views: 137.0ms | ActiveRecord: 1.9ms | Allocations: 7035)
+
+
+Started DELETE "/posts/2" for ::1 at 2023-07-21 14:07:49 -0300
+Processing by PostsController#destroy as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"2"}
+  [1m[36mPost Load (2.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:59:in `set_post'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:48:in `destroy'
+  [1m[36mPost Destroy (5.1ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = ?[0m  [["id", 2]]
+  ↳ app/controllers/posts_controller.rb:48:in `destroy'
+  [1m[36mTRANSACTION (20.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:48:in `destroy'
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 54ms (ActiveRecord: 28.2ms | Allocations: 2367)
+
+
+Started GET "/posts" for ::1 at 2023-07-21 14:07:49 -0300
+Processing by PostsController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.9ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:8
+  Rendered posts/index.html.erb within layouts/application (Duration: 77.0ms | Allocations: 3845)
+  Rendered layout layouts/application.html.erb (Duration: 136.3ms | Allocations: 5943)
+Completed 200 OK in 156ms (Views: 135.6ms | ActiveRecord: 1.9ms | Allocations: 6225)
+
+
+Started DELETE "/posts/3" for ::1 at 2023-07-21 14:07:52 -0300
+Processing by PostsController#destroy as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"3"}
+  [1m[36mPost Load (1.8ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:59:in `set_post'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:48:in `destroy'
+  [1m[36mPost Destroy (4.4ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = ?[0m  [["id", 3]]
+  ↳ app/controllers/posts_controller.rb:48:in `destroy'
+  [1m[36mTRANSACTION (21.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:48:in `destroy'
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 51ms (ActiveRecord: 27.2ms | Allocations: 2358)
+
+
+Started GET "/posts" for ::1 at 2023-07-21 14:07:52 -0300
+Processing by PostsController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.8ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:8
+  Rendered posts/index.html.erb within layouts/application (Duration: 74.3ms | Allocations: 3015)
+  Rendered layout layouts/application.html.erb (Duration: 132.2ms | Allocations: 5113)
+Completed 200 OK in 152ms (Views: 131.5ms | ActiveRecord: 1.8ms | Allocations: 5395)
+
+
+Started DELETE "/posts/4" for ::1 at 2023-07-21 14:07:54 -0300
+Processing by PostsController#destroy as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"4"}
+  [1m[36mPost Load (2.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:59:in `set_post'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:48:in `destroy'
+  [1m[36mPost Destroy (4.5ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = ?[0m  [["id", 4]]
+  ↳ app/controllers/posts_controller.rb:48:in `destroy'
+  [1m[36mTRANSACTION (21.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:48:in `destroy'
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 51ms (ActiveRecord: 28.0ms | Allocations: 2377)
+
+
+Started GET "/posts" for ::1 at 2023-07-21 14:07:54 -0300
+Processing by PostsController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:8
+  Rendered posts/index.html.erb within layouts/application (Duration: 67.2ms | Allocations: 2170)
+  Rendered layout layouts/application.html.erb (Duration: 122.2ms | Allocations: 4268)
+Completed 200 OK in 140ms (Views: 121.7ms | ActiveRecord: 1.5ms | Allocations: 4551)
+
+
+Started DELETE "/posts/5" for ::1 at 2023-07-21 14:07:56 -0300
+Processing by PostsController#destroy as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"5"}
+  [1m[36mPost Load (1.9ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:59:in `set_post'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:48:in `destroy'
+  [1m[36mPost Destroy (5.6ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = ?[0m  [["id", 5]]
+  ↳ app/controllers/posts_controller.rb:48:in `destroy'
+  [1m[36mTRANSACTION (21.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:48:in `destroy'
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 54ms (ActiveRecord: 29.2ms | Allocations: 2361)
+
+
+Started GET "/posts" for ::1 at 2023-07-21 14:07:57 -0300
+Processing by PostsController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (2.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:8
+  Rendered posts/index.html.erb within layouts/application (Duration: 3.9ms | Allocations: 806)
+  Rendered layout layouts/application.html.erb (Duration: 72.9ms | Allocations: 3044)
+Completed 200 OK in 92ms (Views: 71.8ms | ActiveRecord: 2.3ms | Allocations: 3326)
+
+
+Started GET "/posts/new" for ::1 at 2023-07-21 14:08:54 -0300
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 7.6ms | Allocations: 1616)
+  Rendered posts/_form.html.erb (Duration: 0.5ms | Allocations: 929)
+  Rendered posts/new.html.erb within layouts/application (Duration: 22.0ms | Allocations: 3284)
+  Rendered layout layouts/application.html.erb (Duration: 95.7ms | Allocations: 5515)
+Completed 200 OK in 126ms (Views: 96.8ms | ActiveRecord: 0.0ms | Allocations: 5860)
+
+
+Started POST "/posts" for ::1 at 2023-07-21 14:08:58 -0300
+Processing by PostsController#create as */*
+  Parameters: {"post"=>{"sub_posts_attributes"=>[{"dev"=>"Phillippe", "description"=>"fafafafafa", "date"=>"2023-07-21", "status"=>"Continuar", "good_bad"=>"Boa"}]}}
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:23:in `block (2 levels) in create'
+  [1m[36mPost Create (5.9ms)[0m  [1m[32mINSERT INTO "posts" ("dev", "description", "date", "status", "good_bad", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["dev", "Phillippe"], ["description", "fafafafafa"], ["date", "2023-07-21"], ["status", "Continuar"], ["good_bad", "Boa"], ["created_at", "2023-07-21 17:08:58.420816"], ["updated_at", "2023-07-21 17:08:58.420816"]]
+  ↳ app/controllers/posts_controller.rb:23:in `block (2 levels) in create'
+  [1m[36mTRANSACTION (19.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:21:in `create'
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 49ms (ActiveRecord: 25.2ms | Allocations: 2403)
+
+
+Started GET "/posts" for ::1 at 2023-07-21 14:08:58 -0300
+Processing by PostsController#index as */*
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:8
+  Rendered posts/index.html.erb within layouts/application (Duration: 73.9ms | Allocations: 2197)
+  Rendered layout layouts/application.html.erb (Duration: 134.6ms | Allocations: 4295)
+Completed 200 OK in 154ms (Views: 133.9ms | ActiveRecord: 1.7ms | Allocations: 4683)
+
+
+Started GET "/" for ::1 at 2023-07-21 14:09:00 -0300
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.8ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:8
+  Rendered posts/index.html.erb within layouts/application (Duration: 72.9ms | Allocations: 2149)
+  Rendered layout layouts/application.html.erb (Duration: 130.3ms | Allocations: 4247)
+Completed 200 OK in 151ms (Views: 129.8ms | ActiveRecord: 1.8ms | Allocations: 4526)
+
+
