@@ -26,8 +26,15 @@ textarea
   width: 65vh;
 }
 
+
+th{
+  color: white !important;
+  background-color: rgb(34, 33, 33) !important;
+}
+
 td {
-  background-color: #dbdbdb !important;
+
+  background-color: white !important;
 }
 
 select{
@@ -40,4 +47,13 @@ select{
 
 tr{
   margin-bottom: 0 !important;
+}
+
+.accordion-body {
+  background-color: rgb(214, 214, 214);
+}
+
+.accordion-button:not(.collapsed) {
+  color: black !important;
+  background-color: rgb(214, 214, 214) !important;
 }

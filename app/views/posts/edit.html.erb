@@ -19,11 +19,9 @@
           <p style="display: block; font-weight: bold; font-size:20px; margin-bottom:10px; width: 100%">Data</p>
         </th>
       </thead>
-      <%= render "form", post: @post, show_submit_button: false %>
+      <%= render "form", post: @post %>
     </table>
     <div class="d-flex justify-content-end">
-
-      <%= link_to "Salvar", edit_post_path(@post), method: :get ,class:"btn btn-success mt-3"%>
       <%= link_to "Home", posts_path , class:"btn btn-danger mt-3"%>
     </div>
   </div>
