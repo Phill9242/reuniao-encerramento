@@ -2,7 +2,7 @@
   <% if notice %>
     <div class="alert alert-success" role="alert"><%= notice %></div>
   <% end %>
-  <h1>Reunião</h1>
+  <h1 style="color:#e6e6eb !important;">Reunião</h1>
   <div id="posts">
     <% datereunion = [] %> 
     <% @posts.each do |reuniondate| %>
@@ -17,7 +17,7 @@
             </h2>
             <div id=<%= reuniondate.date%> class="accordion-collapse collapse" data-bs-parent="#accordionExample">
               <div class="accordion-body" >
-                <table class="table table-striped table-bordered table-hover">
+                <table class="table table-striped table-hover">
                   <thead>
                     <tr>
                       <th>Dev</th>
@@ -35,11 +35,17 @@
                           <td><%= post.dev %></td>
                           <td><%= post.description %></td>
                           <td><%= post.status %></td>
-                          <td><%= post.good_bad %></td>
+                          <% if post.good_bad == 'Boa' %>
+                            <td style="color: green !important; "><%= post.good_bad %></td>
+                          <% elsif post.good_bad == 'Ruim' %>
+                            <td style="color: red !important;"><%= post.good_bad %></td>
+                          <% end %>
                           <td><%= post.date.strftime("%d/%m/%Y") %></td>
-                          <td class="d-flex">
-                            <%= link_to image_tag("editar.svg"), edit_post_path(post), class:"btn btn-outline-dark me-2"%>
-                            <%= button_to image_tag("excluir.png"), post, method: :delete, class:"btn btn-outline-danger button-delete", onclick: "return confirm('Tem certeza que deseja excluir este post?')" %>
+                          <td>
+                            <div class="d-flex">
+                              <%= link_to image_tag("editar.svg"), edit_post_path(post), class:"btn btn-outline-dark me-2 border-0"%>
+                              <%= button_to image_tag("excluir.png"), post, method: :delete, class:"btn btn-outline-danger button-delete border-0", onclick: "return confirm('Tem certeza que deseja excluir este post?')" %>
+                            </div>
                           </td>
                         </tbody>
                       </tr>  
