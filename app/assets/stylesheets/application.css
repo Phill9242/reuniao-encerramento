@@ -15,6 +15,10 @@
  */
 
 
+body{
+  background-color: #202020;
+}
+
 textarea
 {
   background-color: #c5c4c4 !important;
@@ -28,13 +32,15 @@ textarea
 
 
 th{
+  border-bottom: 2px solid #e6e6eb;
   color: white !important;
-  background-color: rgb(34, 33, 33) !important;
+  background-color: #202020 !important;
 }
 
 td {
-
-  background-color: white !important;
+  border-bottom: 2px solid #e6e6eb;
+  color: #e6e6eb !important;
+  background-color: #202020 !important;
 }
 
 select{
@@ -50,10 +56,18 @@ tr{
 }
 
 .accordion-body {
-  background-color: rgb(214, 214, 214);
+  border: 3px solid #e6e6eb;
+  border-top:none;
+  background-color: #202020;
 }
 
+.accordion-button {
+  color: #e6e6eb !important;
+  background-color: #202020  !important;
+}
 .accordion-button:not(.collapsed) {
-  color: black !important;
-  background-color: rgb(214, 214, 214) !important;
+  border: 3px solid #e6e6eb;
+  border-bottom:none;
+  color: #e6e6eb !important;
+  background-color: #202020  !important;
 }
