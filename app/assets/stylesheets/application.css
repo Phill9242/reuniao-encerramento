@@ -19,9 +19,9 @@ body{
   background-color: #202020;
 }
 
-textarea
-{
-  background-color: #c5c4c4 !important;
+textarea{
+  color: #e6e6eb !important;
+  background-color: #303030 !important;
   font-size: 20px !important;
 }
 
@@ -38,17 +38,21 @@ th{
 }
 
 td {
+  padding-top: 1em !important;
+  padding-bottom: 1em !important;
   border-bottom: 2px solid #e6e6eb;
   color: #e6e6eb !important;
   background-color: #202020 !important;
 }
 
 select{
-  background-color: #c5c4c4 !important;
+  color: #e6e6eb !important;
+  background-color: #303030 !important;
 }
 
 .data {
-  background-color: #c5c4c4 !important;
+  color: #e6e6eb !important;
+  background-color: #303030 !important;
 }
 
 tr{
@@ -62,6 +66,7 @@ tr{
 }
 
 .accordion-button {
+  border: 3px solid #e6e6eb;
   color: #e6e6eb !important;
   background-color: #202020  !important;
 }
@@ -70,4 +75,8 @@ tr{
   border-bottom:none;
   color: #e6e6eb !important;
   background-color: #202020  !important;
+}
+
+.accordion-button:not(.collapsed)::after {
+  color: #e6e6eb !important;
 }
