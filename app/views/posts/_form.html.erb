@@ -16,7 +16,7 @@
         <%= form.select :dev , ['Phillippe', 'Mauricio', 'Rodrigo', 'Antonio', 'Henry', 'Enzo', 'Jasiel', 'Diego'] , {}, { :class => 'btn border dropdown-toggle w-100' }%>
       </td>
       <td>
-        <%= form.text_area :description, class: "form-control custom-textarea" %>
+        <%= form.text_area :description, class: "form-control custom-textarea",required: true %>
       </td>
       <td>
         <%= form.select :good_bad, ['Boa', 'Ruim'], {}, { :class => 'btn border dropdown-toggle w-100' }%>
@@ -26,6 +26,8 @@
       </td>
       <td>
         <%= form.date_field :date , class:"form-control w-100 data", :value => Time.now.strftime('%Y-%m-%d')%>
+      </td>
+      <td class="removeButton">
       </td>
       <td>
         <% if post.persisted? %>

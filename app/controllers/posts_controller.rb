@@ -20,13 +20,11 @@ class PostsController < ApplicationController
   def create
     ActiveRecord::Base.transaction do
       post_params[:sub_posts_attributes].each do |sub_post_params|
-        Post.create!(sub_post_params)
+        @post = Post.create!(sub_post_params)
+        if @post.save
+          puts "teste"
+        end
       end
-    end
-  
-    respond_to do |format|
-      format.html { redirect_to posts_url, notice: "Posts were successfully created." }
-      format.json { head :no_content }
     end
   end
 
@@ -34,7 +32,7 @@ class PostsController < ApplicationController
   def update
     respond_to do |format|
       if @post.update(post_params)
-        format.html { redirect_to posts_url, notice: "Post was successfully updated." }
+        format.html { redirect_to root_path, notice: "Post was successfully updated." }
         format.json { render :show, status: :ok, location: @post }
       else
         format.html { render :edit, status: :unprocessable_entity }
