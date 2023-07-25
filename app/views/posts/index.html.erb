@@ -40,7 +40,11 @@
                           <td><%= post.date.strftime("%d/%m/%Y") %></td>
                           <td>
                             <div class="d-flex">
-                              <%= link_to image_tag("editar.svg"), edit_post_path(post), class:"btn btn-outline-dark me-2 border-0"%>
+                              <%= form_with url: edit_post_path(post), method: :get do %>
+                                  <%= button_tag(type: 'submit', class: "btn btn-outline-dark me-2 border-0") do %>
+                                    <%= image_tag "editar.svg" %>
+                                  <% end %> 
+                                <% end %>
                               <%= button_to image_tag("excluir.png"), post, method: :delete, class:"btn btn-outline-danger button-delete border-0", onclick: "return confirm('Tem certeza que deseja excluir este post?')" %>
                             </div>
                           </td>

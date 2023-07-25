@@ -26,13 +26,6 @@
       <td>
         <%= form.date_field :date , class:"form-control w-100 data", :value => Time.now.strftime('%Y-%m-%d')%>
       </td>
-      <td class="removeButton">
-      </td>
-      <td>
-        <% if post.persisted? %>
-          <%= form.submit "Save", class: "btn btn-primary" %>
-        <% end %>
-      </td>
     </tbody>
   </tr>
 <% end %>
