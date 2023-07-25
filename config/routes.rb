@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  resources :posts
+  resources :posts, :except => [:show]
 
   root "posts#index"
   get 'busca', to:'busca#index'
