@@ -1,6 +1,6 @@
 <div class="container">
   <h2 class="my-4" style="color:#e6e6eb !important;">New Post</h2>
-  <div id="formContainer">
+  <div class="d-flex" id="formContainer">
     <table class="table m-0" id="tabela">
       <thead>
         <th>
@@ -37,8 +37,14 @@
   
 <script>
   document.getElementById('addFormButton').addEventListener('click', function() {
+    const formCont = document.getElementById("formContainer")
     const rmvBtn = document.createElement("button")
-    rmvBtn.innerHTML = "teste"
+    rmvBtn.innerHTML = "remove"
+    rmvBtn.classList.add("btn")
+    rmvBtn.classList.add("btn-outline-danger")
+    rmvBtn.classList.add("my-3")
+    rmvBtn.classList.add("px-4")
+    rmvBtn.classList.add("rounded-pill")
     var newForm = document.createElement('tbody');
     newForm.innerHTML = `
       <%= render "form", post: @post, show_submit_button: false %>
