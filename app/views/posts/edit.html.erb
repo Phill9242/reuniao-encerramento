@@ -1,31 +1,31 @@
-<div class="container">
-  <h2 class="my-4" style="color:#fff">New Post</h2>
-  <div id="formContainer">
-    <table class="table m-0" id="tabela">
-      <thead>
-        <th>
-          <p style="display: block; font-weight: bold; font-size:20px; margin-bottom:10px; width: 100%">Desenvolvedor</p>
-        </th>
-        <th>
-          <p style="display: block; font-weight: bold; font-size:20px; margin-bottom:10px; width: 100%">Descrição</p>
-        </th>
-        <th>
-          <p style="display: block; font-weight: bold; font-size:20px; margin-bottom:10px; width: 100%">Bom/Ruim</p>
-        </th>
-        <th>
-          <p style="display: block; font-weight: bold; font-size:20px; margin-bottom:10px; width: 100%">Status</p>
-        </th>
-        <th>
-          <p style="display: block; font-weight: bold; font-size:20px; margin-bottom:10px; width: 100%">Data</p>
-        </th>
-      </thead>
-      <%= render "form", post: @post%>
-    </table>
-    <div class="d-flex justify-content-end mt-3">
-      <%= form_tag(post_path, method: :patch, id:"post[sub_posts_attributes][]") do %>
+<%= form_tag(post_path(@post), method: :patch) do %>
+  <div class="container">
+    <h2 class="my-4" style="color:#fff">New Post</h2>
+    <div id="formContainer">
+      <table class="table m-0" id="tabela">
+        <thead>
+          <th>
+            <p style="display: block; font-weight: bold; font-size:20px; margin-bottom:10px; width: 100%">Desenvolvedor</p>
+          </th>
+          <th>
+            <p style="display: block; font-weight: bold; font-size:20px; margin-bottom:10px; width: 100%">Descrição</p>
+          </th>
+          <th>
+            <p style="display: block; font-weight: bold; font-size:20px; margin-bottom:10px; width: 100%">Bom/Ruim</p>
+          </th>
+          <th>
+            <p style="display: block; font-weight: bold; font-size:20px; margin-bottom:10px; width: 100%">Status</p>
+          </th>
+          <th>
+            <p style="display: block; font-weight: bold; font-size:20px; margin-bottom:10px; width: 100%">Data</p>
+          </th>
+        </thead>
+        <%= render "form", post: @post %>
+      </table>
+      <div class="d-flex justify-content-end mt-3">
         <%= submit_tag "Salvar", id: "submitButton", class: "btn btn-outline-success" %> 
-        <%= link_to "Home", posts_path , class:"btn btn-outline-danger "%>
-      <% end %>
+        <%= link_to "Home", posts_path , class:"btn btn-outline-danger " %>
+      </div>
     </div>
   </div>
-</div>
+<% end %>
