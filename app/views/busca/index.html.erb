@@ -52,8 +52,12 @@
             <td><%= post.dev %></td>
             <td><%= post.description %></td>
             <td><%= post.status %></td>
-            <td><%= post.good_bad %></td>
-            <td><%= post.date %></td>
+            <% if post.good_bad == 'Boa' %>
+              <td style="color: green !important; "><%= post.good_bad %></td>
+            <% elsif post.good_bad == 'Ruim' %>
+              <td style="color: red !important;"><%= post.good_bad %></td>
+            <% end %>
+            <td><%= post.date.strftime("%d/%m/%Y") %></td>
             <td>
               <div class="d-flex">
                 <%= link_to image_tag("editar.svg"), edit_post_path(post), class:"btn btn-outline-dark me-2 border-0"%>
