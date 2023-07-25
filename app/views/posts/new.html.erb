@@ -80,7 +80,6 @@
       },
       body: JSON.stringify({ post: { sub_posts_attributes: sub_posts } }) 
     })
-    .then(response => console.log(response.json()))
     .then(data => window.location.replace("/"));
   }
 });
