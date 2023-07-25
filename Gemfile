@@ -6,7 +6,7 @@ ruby "3.1.0"
 gem "twitter-bootstrap-rails"
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.0.5", ">= 7.0.5.1"
-
+gem 'i18n', '~> 1.14', '>= 1.14.1'
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem "sprockets-rails"
 
