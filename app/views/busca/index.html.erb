@@ -9,12 +9,12 @@
     <div class="row">
       <div class="col-md-3 mb-3">
         <label>Selecione o Status</label>
-        <%= select_tag :status, options_for_select(['Todos', 'Continuar', 'Parar', 'Melhorar']), class: "form-select" %>
+        <%= select_tag :status, options_for_select(['Todos', 'Continuar', 'Parar', 'Melhorar']), class: "btn border dropdown-toggle w-100" %>
       </div>
 
       <div class="col-md-3 mb-3">
         <label>Selecione o Tipo</label>
-        <%= select_tag :good_bad, options_for_select(['Todos', 'Boa', 'Ruim']), class: "form-select" %>
+        <%= select_tag :good_bad, options_for_select(['Todos', 'Boa', 'Ruim']), class: "btn border dropdown-toggle w-100" %>
       </div>
 
       <div class="col-md-3 mb-3">
