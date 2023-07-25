@@ -23,12 +23,11 @@ textarea{
   color: #e6e6eb !important;
   background-color: #303030 !important;
   font-size: 20px !important;
-}
-
-.custom-textarea {
   height: 12vh;
   width: 65vh;
 }
+
+
 
 
 th{
