@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :devs
   resources :posts, :except => [:show]
 
   root "posts#index"
