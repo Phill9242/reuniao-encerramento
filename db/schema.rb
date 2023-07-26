@@ -10,15 +10,23 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_07_18_133410) do
+ActiveRecord::Schema[7.0].define(version: 2023_07_26_172708) do
+  create_table "devs", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "posts", force: :cascade do |t|
-    t.string "dev"
     t.text "description"
     t.date "date"
     t.string "status"
     t.string "good_bad"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "dev_id", null: false
+    t.index ["dev_id"], name: "index_posts_on_dev_id"
   end
 
+  add_foreign_key "posts", "devs"
 end
