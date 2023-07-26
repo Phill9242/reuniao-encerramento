@@ -16,6 +16,7 @@ class PostsController < ApplicationController
 
   def edit
     @atualizar = "Atualizar"
+    @devs = Dev.all
   end
 
   def create
