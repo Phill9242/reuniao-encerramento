@@ -12,7 +12,7 @@
   <tr>
     <tbody class="post-form">
       <td>
-        <%= form.select :dev , ['Phillippe', 'Mauricio', 'Rodrigo', 'Antonio', 'Henry', 'Enzo', 'Jasiel', 'Diego'] , {}, { :class => 'btn border dropdown-toggle w-100' }%>
+        <%= form.select :dev_id, @devs.map { |dev| [dev.name, dev.id] }, {}, { :class => 'btn border dropdown-toggle w-100' } %>
       </td>
       <td>
         <%= form.text_area :description, class: "form-control custom-textarea",required: true %>
