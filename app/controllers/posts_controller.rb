@@ -11,10 +11,12 @@ class PostsController < ApplicationController
   def new
     @criar = "Criar"
     @post = Post.new
+    @devs = Dev.all
   end
 
   def edit
     @atualizar = "Atualizar"
+    @devs = Dev.all
   end
 
   def create
@@ -60,6 +62,6 @@ class PostsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def post_params
-      params.require(:post).permit(:dev, :description, :date, :status, :good_bad, sub_posts_attributes: [:dev, :description, :date, :status, :good_bad])
+      params.require(:post).permit(:dev_id, :description, :date, :status, :good_bad, sub_posts_attributes: [:dev_id, :description, :date, :status, :good_bad])
     end
 end
