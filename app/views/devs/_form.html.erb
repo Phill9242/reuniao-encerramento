@@ -13,10 +13,10 @@
 
   <div>
     <%= form.label "Nome", style: "display: block; color:#e6e6eb" %>
-    <%= form.text_field :name, class:"my-3 text-field form-control" %>
+    <div class="d-flex"> 
+      <%= form.text_field :name, class:"my-3 text-field form-control" %>
+      <%= form.submit "Criar Dev", class:"my-2 btn btn-outline-primary" %>
+    </div>
   </div>
 
-  <div>
-    <%= form.submit class:"btn btn-outline-primary" %>
-  </div>
 <% end %>

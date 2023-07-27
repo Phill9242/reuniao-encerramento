@@ -33,7 +33,13 @@ textarea{
   width: 65vh;
 }
 
+.tabela-dev{
+  width: 40%;
+}
+
 .text-field {
+  margin-right: 1em;
+  width: 40%;
   color: #e6e6eb !important;
   background-color: #303030 !important;
 }
