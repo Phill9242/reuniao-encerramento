@@ -11,12 +11,12 @@ class PostsController < ApplicationController
   def new
     @criar = "Criar"
     @post = Post.new
-    @devs = Dev.all
+    @devs = Dev.all.order(:name)
   end
 
   def edit
     @atualizar = "Atualizar"
-    @devs = Dev.all
+    @devs = Dev.all.order(:name)
   end
 
   def create
