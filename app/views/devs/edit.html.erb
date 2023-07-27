@@ -1,10 +1,11 @@
-<h1>Editing dev</h1>
+<div class="container">
 
-<%= render "form", dev: @dev %>
+  <h1 style= "color:#e6e6eb" class="mt-3" >Editing dev</h1>
+  <%= render "form", dev: @dev %>
 
-<br>
+  <br>
 
-<div>
-  <%= link_to "Show this dev", @dev %> |
-  <%= link_to "Back to devs", devs_path %>
+  <div>
+    <%= link_to "Home", devs_path , class:"btn btn-danger"%>
+  </div>
 </div>

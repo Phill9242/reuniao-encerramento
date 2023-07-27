@@ -12,12 +12,11 @@
   <% end %>
 
   <div>
-    <%= form.label :name, style: "display: block" %>
-    <%= form.text_field :name %>
-    <%= form.text_field :id %>
+    <%= form.label "Nome", style: "display: block; color:#e6e6eb" %>
+    <%= form.text_field :name, class:"my-3 text-field form-control" %>
   </div>
 
   <div>
-    <%= form.submit %>
+    <%= form.submit class:"btn btn-outline-primary" %>
   </div>
 <% end %>

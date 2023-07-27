@@ -1,6 +1,6 @@
 <%= form_tag(post_path(@post), method: :patch) do %>
   <div class="container">
-    <h2 class="my-4" style="color:#fff">New Post</h2>
+    <h2 class="my-4" style="color:#fff">Editing Post</h2>
     <div id="formContainer">
       <table class="table m-0" id="tabela">
         <thead>
@@ -24,7 +24,7 @@
       </table>
       <div class="d-flex justify-content-end mt-3">
         <%= submit_tag "Salvar", id: "submitButton", class: "btn btn-outline-success mx-3" %> 
-        <%= link_to "Home", posts_path , class:"btn btn-danger"%>
+        <%= link_to "Home", posts_path , class:"btn btn-outline-danger"%>
       </div>
     </div>
   </div>

@@ -1,9 +1,12 @@
-<h1>New dev</h1>
+<div class="container">
 
-<%= render "form", dev: @dev %>
+  <h1 style= "color:#e6e6eb" class="mt-3" >New dev</h1>
 
-<br>
+  <%= render "form", dev: @dev %>
 
-<div>
-  <%= link_to "Back to devs", devs_path %>
+  <br>
+
+  <div>
+    <%= link_to "Home", devs_path , class:"btn btn-outline-danger"%>
+  </div>
 </div>

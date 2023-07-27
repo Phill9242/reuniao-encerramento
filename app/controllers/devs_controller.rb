@@ -25,7 +25,7 @@ class DevsController < ApplicationController
 
     respond_to do |format|
       if @dev.save
-        format.html { redirect_to dev_url(@dev), notice: "Dev was successfully created." }
+        format.html { redirect_to devs_url, notice: "Dev was successfully created." }
         format.json { render :show, status: :created, location: @dev }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class DevsController < ApplicationController
   def update
     respond_to do |format|
       if @dev.update(dev_params)
-        format.html { redirect_to dev_url(@dev), notice: "Dev was successfully updated." }
+        format.html { redirect_to devs_url, notice: "Dev was successfully updated." }
         format.json { render :show, status: :ok, location: @dev }
       else
         format.html { render :edit, status: :unprocessable_entity }
