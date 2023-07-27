@@ -8,22 +8,22 @@
 
     <div class="row">
       <div class="col-md-3 mb-3">
-        <label>Selecione o Status</label>
-        <%= select_tag :status, options_for_select(['Todos', 'Continuar', 'Parar', 'Melhorar']), class: "btn border dropdown-toggle w-100" %>
+        <label style="color:#e6e6eb ;">Selecione o Status</label>
+        <%= select_tag :status, options_for_select(['Todos', 'Continuar', 'Parar', 'Melhorar']), class: "btn border dropdown-toggle w-100  text-start" %>
       </div>
 
       <div class="col-md-3 mb-3">
-        <label>Selecione o Tipo</label>
-        <%= select_tag :good_bad, options_for_select(['Todos', 'Boa', 'Ruim']), class: "btn border dropdown-toggle w-100" %>
+        <label style="color:#e6e6eb ;">Selecione o Tipo</label>
+        <%= select_tag :good_bad, options_for_select(['Todos', 'Boa', 'Ruim']), class: "btn border dropdown-toggle w-100  text-start" %>
       </div>
 
       <div class="col-md-3 mb-3">
-        <label>Data de início</label>
+        <label style="color:#e6e6eb ;">Data de início</label>
         <%= date_field_tag :start_date, nil, class: "form-control" %>
       </div>
 
       <div class="col-md-3 mb-3">
-        <label>Data de fim</label>
+        <label style="color:#e6e6eb ;">Data de fim</label>
         <%= date_field_tag :end_date, nil, class: "form-control" %>
       </div>
     </div>
