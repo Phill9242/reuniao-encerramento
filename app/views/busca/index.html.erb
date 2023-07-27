@@ -3,8 +3,10 @@
   <h1 style="color:#FFF">Busca</h1>
   <%= form_with(url: "/busca/search", method: "get", local: true, class: 'bg-transparent') do %>
     <div class="mb-3">
-      <%= text_field_tag :search, nil, placeholder: "Digite o termo de busca", class: "form-control" %>
+      <%= text_field_tag :search, nil, placeholder: "Digite o termo de busca", class: "form-control search", style: "background-color: #333; color: #fff" %>
+
     </div>
+
 
     <div class="row">
       <div class="col-md-3 mb-3">
@@ -19,12 +21,12 @@
 
       <div class="col-md-3 mb-3">
         <label style="color:#e6e6eb ;">Data de início</label>
-        <%= date_field_tag :start_date, nil, class: "form-control" %>
+        <%= date_field_tag :start_date, nil, class: "form-control", style: "background-color: #333; color: #fff" %>
       </div>
 
       <div class="col-md-3 mb-3">
         <label style="color:#e6e6eb ;">Data de fim</label>
-        <%= date_field_tag :end_date, nil, class: "form-control" %>
+        <%= date_field_tag :end_date, nil, class: "form-control", style: "background-color: #333; color: #fff" %>
       </div>
     </div>
 
