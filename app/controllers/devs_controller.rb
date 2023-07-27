@@ -3,7 +3,7 @@ class DevsController < ApplicationController
 
   # GET /devs or /devs.json
   def index
-    @devs = Dev.all
+    @devs = Dev.all.order(:name)
   end
 
   # GET /devs/1 or /devs/1.json

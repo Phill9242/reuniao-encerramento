@@ -18,10 +18,10 @@
         <%= form.text_area :description, class: "form-control custom-textarea",required: true %>
       </td>
       <td>
-        <%= form.select :good_bad, ['Boa', 'Ruim'], {}, { :class => 'btn border dropdown-toggle w-100  text-start' }%>
+        <%= form.select :good_bad, ['', 'Boa', 'Ruim'], {}, { :class => 'btn border dropdown-toggle w-100  text-start' }%>
       </td>
       <td>
-        <%= form.select :status, ['Continuar', 'Parar', 'Melhorar'], {}, { :class => 'btn border dropdown-toggle w-100  text-start' }%>
+        <%= form.select :status, ['', 'Continuar', 'Parar', 'Melhorar'], {}, { :class => 'btn border dropdown-toggle w-100  text-start' }%>
       </td>
       <td>
         <%= form.date_field :date , class:"form-control w-100 data", :value => Time.now.strftime('%Y-%m-%d')%>
