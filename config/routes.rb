@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  resources :devs
+  resources :devs, :except => [:show]
   resources :posts, :except => [:show]
   get 'export_excel', to: 'export_excel#export', as: :export_excel
   root "posts#index"
