@@ -87,3 +87,7 @@ tr{
 .accordion-button:not(.collapsed)::after {
   color: #e6e6eb !important;
 }
+
+.form-control.search::placeholder {
+  color: #fff;
+}
