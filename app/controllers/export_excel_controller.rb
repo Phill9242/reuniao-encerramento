@@ -5,7 +5,7 @@ class ExportExcelController < ApplicationController
 
     package = Axlsx::Package.new
     workbook = package.workbook
-    @worksheet = workbook.add_worksheet(name: "Dados")
+    @worksheet = workbook.add_worksheet(name: "Reuniões")
     
     @posts = Post.joins(:dev).order(:date, 'devs.name', :good_bad)
     @previous_date = nil

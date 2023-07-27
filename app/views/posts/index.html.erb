@@ -66,22 +66,3 @@
   <%= link_to "Exportar Excel", export_excel_path, class:"btn btn-primary btn-small", style:"margin-top: 0.7rem;" %>
 
 </div>
-<script>
-document.addEventListener("DOMContentLoaded", function() {
-  const exportButtons = document.querySelectorAll("[data-behavior='export-excel']");
-  exportButtons.forEach(button => {
-    button.addEventListener("click", function(event) {
-      event.preventDefault();
-      fetch(this.href)
-        .then(response => response.blob())
-        .then(blob => {
-          const url = window.URL.createObjectURL(blob);
-          const a = document.createElement("a");
-          a.href = url;
-          a.download = "reunião_encerramento.xlsx";
-          a.click();
-        });
-    });
-  });
-});
-</script>
