@@ -39,7 +39,8 @@
   document.getElementById('addFormButton').addEventListener('click', function() {
     const formCont = document.getElementById("formContainer")
     const rmvBtn = document.createElement("button")
-    rmvBtn.innerHTML = "remove"
+    rmvBtn.innerHTML = `<%= image_tag "excluir.svg" %>`
+    rmvBtn.style.backgroundColor = ""
     rmvBtn.classList.add("btn")
     rmvBtn.classList.add("btn-outline-danger")
     rmvBtn.classList.add("my-3")
