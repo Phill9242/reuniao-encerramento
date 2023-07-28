@@ -18,9 +18,9 @@
                   <thead>
                     <tr>
                       <th>Dev</th>
-                      <th>Description</th>
+                      <th class="ps-2">Description</th>
                       <th>Status</th>
-                      <th>Good/Bad</th>
+                      <th class="text-center pe-2">Good/Bad</th>
                       <th>Date</th>
                       <th colspan="3"></th>
                     </tr>
@@ -30,12 +30,12 @@
                       <tr>
                         <tbody>
                           <td><%= post.dev.name %></td>
-                          <td><%= post.description %></td>
+                          <td class="ps-2"><%= post.description %></td>
                           <td><%= post.status %></td>
                           <% if post.good_bad == 'Boa' %>
-                            <td style="color: green !important; "><%= post.good_bad %></td>
+                            <td style="color: green !important; " class="text-center"><%= post.good_bad %></td>
                           <% elsif post.good_bad == 'Ruim' %>
-                            <td style="color: red !important;"><%= post.good_bad %></td>
+                            <td style="color: red !important;" class="text-center"><%= post.good_bad %></td>
                           <% end %>
                           <td><%= post.date.strftime("%d/%m/%Y") %></td>
                           <td>
