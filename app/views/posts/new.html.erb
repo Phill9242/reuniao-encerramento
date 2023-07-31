@@ -1,7 +1,7 @@
 <div class="container">
-  <h2 class="my-4" style="color:#e6e6eb !important;">Nova Reunião</h2>
+  <h2 class="my-4 order-2" style="color:#e6e6eb !important;">Nova Reunião</h2>
   <div class="d-flex" id="formContainer">
-    <table class="table m-0" id="tabela">
+    <table class="table m-0 order-3" id="tabela">
       <thead>
         <th>
           <p style="display: block; font-weight: bold; font-size:20px; margin-bottom:10px; width: 100%">Desenvolvedor</p>
@@ -81,7 +81,14 @@
     })
     .then(data => window.location.replace("/"));
   }else {
-    console.log("oi")
+    const container = document.querySelector(".container")
+    const txtError = document.createElement("div")
+    txtError.innerHTML = "Verifique se preencheu todos os campos!"
+    txtError.classList.add("order-1")
+    txtError.classList.add("alert")
+    txtError.classList.add("alert-danger")
+    txtError.classList.add("mt-3")
+    container.add(txtError)
   }
 });
 
