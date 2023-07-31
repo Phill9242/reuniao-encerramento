@@ -60,6 +60,8 @@
   let description
   let sub_posts = forms.map((form, index) => {
     description = form.querySelector(`#post_description`).value
+    status = form.querySelector(`#post_status`).value
+    good_bad = form.querySelector(`#post_good_bad`).value
     return {
       dev_id: form.querySelector(`#post_dev_id`).value,
       description: form.querySelector(`#post_description`).value,
@@ -68,7 +70,7 @@
       good_bad: form.querySelector(`#post_good_bad`).value,
     };
   });
-  if(description){   
+  if(description && status && good_bad){   
     fetch('/posts', {
       method: 'POST',
       headers: {
@@ -78,6 +80,8 @@
       body: JSON.stringify({ post: { sub_posts_attributes: sub_posts } }) 
     })
     .then(data => window.location.replace("/"));
+  }else {
+    console.log("oi")
   }
 });
 
