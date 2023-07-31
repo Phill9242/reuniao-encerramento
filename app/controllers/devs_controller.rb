@@ -12,11 +12,13 @@ class DevsController < ApplicationController
 
   # GET /devs/new
   def new
+    @criar = "Criar Post"
     @dev = Dev.new
   end
 
   # GET /devs/1/edit
   def edit
+    @editar = "Editar Post"
   end
 
   # POST /devs or /devs.json
