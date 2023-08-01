@@ -5,10 +5,6 @@ Rails.application.routes.draw do
   root "posts#index"
   get 'busca', to:'busca#index'
   get 'busca/search', to: 'busca#search'
+  delete 'posts', to: 'posts#destroy_multiple', as: :destroy_multiple
 
-  resources :posts do
-    collection do
-      delete 'destroy_multiple'
-    end
-  end
 end

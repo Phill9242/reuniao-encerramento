@@ -46,11 +46,11 @@ class PostsController < ApplicationController
 
   def destroy_multiple 
     puts "Destroy aqui"
-    puts "\n\n\nxxx\n\n\n"
-    puts params[:posts_id]
-    params[:posts_id].each do |id|
-      puts id
-      post = Post.find(id)
+
+    puts "\nPARAMETROS \n\n\n"
+    params[:posts_ids].each do |id_number|
+      post = Post.find(id_number)
+      puts "POSTAGEM"
       post.destroy
     end
     respond_to do |format|
