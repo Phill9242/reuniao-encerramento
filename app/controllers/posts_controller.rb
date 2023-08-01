@@ -20,14 +20,16 @@ class PostsController < ApplicationController
   end
 
   def create
-    ActiveRecord::Base.transaction do
-      post_params[:sub_posts_attributes].each do |sub_post_params|
-        @post = Post.create!(sub_post_params)
-        if @post.save
-          flash[:notice] = "Post criado com sucesso!"
-        end
+    @error  = false
+  
+    post_params[:sub_posts_attributes].each do |sub_post_params|
+      @post = Post.new(sub_post_params)
+      unless @post.save
+        @error = true
+        break
       end
     end
+    @error ? flash[:error] = "Erro ao criar post!" : flash[:notice] = "Post criados com sucesso!"
   end
 
   # PATCH/PUT /posts/1 or /posts/1.json
@@ -35,7 +37,6 @@ class PostsController < ApplicationController
     respond_to do |format|
       if @post.update(post_params)
         format.html { redirect_to root_path, notice: "O Post foi atualizado com sucesso" }
-
         format.json { render :show, status: :ok, location: @post }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -45,14 +46,11 @@ class PostsController < ApplicationController
   end
 
   def destroy_multiple 
-    puts "Destroy aqui"
-
-    puts "\nPARAMETROS \n\n\n"
     params[:posts_ids].each do |id_number|
       post = Post.find(id_number)
-      puts "POSTAGEM"
       post.destroy
     end
+
     respond_to do |format|
       format.html { redirect_to posts_url, notice: "Os Posts foram excluídos com sucesso" }
       format.json { head :no_content }
