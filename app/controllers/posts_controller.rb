@@ -54,7 +54,7 @@ class PostsController < ApplicationController
       post.destroy
     end
     respond_to do |format|
-      format.html { redirect_to posts_url }
+      format.html { redirect_to posts_url, notice: "Os Posts foram excluídos com sucesso" }
       format.json { head :no_content }
     end
   end
