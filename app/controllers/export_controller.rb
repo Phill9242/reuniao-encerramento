@@ -1,15 +1,17 @@
 class ExportController < ApplicationController
 
   def index
-    
+    @devs = Dev.all.order(:name)
   end
 
   def search
+    puts params
     @posts = Post.joins(:dev).order(:date, 'devs.name', :good_bad)
-    @posts = @posts.where("devs.name LIKE ? OR description LIKE ?", "%#{params[:search]}%", "%#{params[:search]}%") if params[:search].present?
+    @posts = @posts.where("description LIKE ?", "%#{params[:search]}%") if params[:search].present?
     @posts = @posts.where(status: params[:status]) if params[:status] != 'Todos'
     @posts = @posts.where(good_bad: params[:good_bad]) if params[:good_bad] != 'Todos'
-    
+    @posts = @posts.joins(:dev).where(devs: {id: params[:dev_id]}) if params[:dev_id] != 'Todos'
+   
     if params[:start_date].present? && params[:end_date].present?
       start_date = Date.parse(params[:start_date])
       end_date = Date.parse(params[:end_date])
@@ -36,8 +38,6 @@ class ExportController < ApplicationController
     end
   end
   
-  
-
   def make_header_for_each_reunion post, index
     headers = ["Nome", "Descrição", "Status", "Bom/Ruim", "Data"]
     @worksheet.add_row([""]) if @previous_date != nil

@@ -1,36 +1,40 @@
 <div class='container'>
   <h1 style="color:#FFF" class="my-3">Exportar</h1>
-  <%= form_with(url: "/export/search", method: "get", local: true, class: 'bg-transparent', id: 'search_form') do %>
+  <%= form_with(url: "/export/search", method: "post", local: true, class: 'bg-transparent', id: 'search_form') do %>
   
     <div class="mb-3">
-      <%= text_field_tag :search, nil, placeholder: "Digite o termo de busca", class: "form-control search", style: "background-color: #333; color: #fff" %>
+      <%= text_field_tag :search, nil, placeholder: "Procure pela descrição", class: "form-control search", style: "background-color: #333; color: #fff" %>
     </div>
 
-
     <div class="row">
-      <div class="col-md-3 mb-3">
+      <div class="mb-3">
+        <label style="color:#e6e6eb ;">Selecione o Desenvolvedor</label>
+        <%= select_tag :dev_id, options_for_select([["Todos"]] + @devs.map { |dev| [dev.name, dev.id] }), class: 'btn border dropdown-toggle w-100 text-start' %>
+      </div>
+
+      <div class="mb-3">
         <label style="color:#e6e6eb ;">Selecione o Status</label>
         <%= select_tag :status, options_for_select(['Todos', 'Continuar', 'Parar', 'Melhorar']), class: "btn border dropdown-toggle w-100  text-start" %>
       </div>
 
-      <div class="col-md-3 mb-3">
+      <div class="mb-3">
         <label style="color:#e6e6eb ;">Selecione o Tipo</label>
         <%= select_tag :good_bad, options_for_select(['Todos', 'Boa', 'Ruim']), class: "btn border dropdown-toggle w-100  text-start" %>
       </div>
 
-      <div class="col-md-3 mb-3">
+      <div class="col-md-6 mb-3">
         <label style="color:#e6e6eb ;">Data de início</label>
         <%= date_field_tag :start_date, nil, class: "form-control", style: "background-color: #333; color: #fff" %>
       </div>
 
-      <div class="col-md-3 mb-3">
+      <div class="col-md-6 mb-3">
         <label style="color:#e6e6eb ;">Data de fim</label>
         <%= date_field_tag :end_date, nil, class: "form-control", style: "background-color: #333; color: #fff" %>
       </div>
     </div>
 
     <div class="mb-3">
-    <%= submit_tag "Buscar", class: "btn btn-primary", id: "submit-btn" %>
+    <%= submit_tag "Exportar dados", class: "btn btn-primary", id: "submit-btn" %>
   <% end %>
 </div>
 
