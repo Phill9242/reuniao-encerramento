@@ -102,3 +102,11 @@ tr{
 .form-control.search::placeholder {
   color: #fff;
 }
+
+td.description {
+  width: 60%;
+}
+
+td {
+  width: 15%;
+}

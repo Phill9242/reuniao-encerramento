@@ -80,3 +80,5 @@ group :test do
 end
 
 gem 'kaminari'
+
+gem 'select_all-rails'
