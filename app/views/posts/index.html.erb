@@ -14,14 +14,14 @@
                 </button>
               </h2>
               <div id=<%= reuniondate.date%> class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                <div class="accordion-body" >
+                <div class="accordion-body form-check" >
                   <table class="table table-striped table-hover">
                     <thead>
                       <tr>
                         <th>Dev</th>
-                        <th class="px-2">Description</th>
+                        <th class="pe-3">Description</th>
                         <th>Status</th>
-                        <th class="text-center pe-2">Good/Bad</th>
+                        <th>Good/Bad</th>
                         <th>Date</th>
                         <th colspan="3"></th>
                       </tr>
@@ -31,12 +31,12 @@
                         <tr>
                           <tbody>
                             <td><%= post.dev.name %></td>
-                            <td class="px-2"><%= post.description %></td>
+                            <td class="pe-3 description"><%= post.description %></td>
                             <td><%= post.status %></td>
                             <% if post.good_bad == 'Boa' %>
-                              <td style="color: green !important; " class="text-center"><%= post.good_bad %></td>
+                              <td style="color: green !important; " ><%= post.good_bad %></td>
                             <% elsif post.good_bad == 'Ruim' %>
-                              <td style="color: red !important;" class="text-center"><%= post.good_bad %></td>
+                              <td style="color: red !important;" ><%= post.good_bad %></td>
                             <% end %>
                             <td><%= post.date.strftime("%d/%m/%Y") %></td>
                             <td>
@@ -50,7 +50,7 @@
                               </div>
                             </td>
                             <td>
-                              <td><%= check_box_tag "posts_ids[]", post.id, false, class: 'selectable' %></td>
+                              <%= check_box_tag "posts_ids[]", post.id, false, class: 'selectable form-check-input m-2' %>
                             </td>
                           </tbody>
                         </tr>  
@@ -64,8 +64,11 @@
         <% end %> 
       <% end %>
     </div>
-    <%= form.submit "Delete selected", :class => 'btn btn-primary btn-xs' %>
+    <div class="d-flex"  style="justify-content: space-between">
+    <%= link_to "Nova Reunião", new_post_path, class:"btn btn-outline-primary mt-2" %>
+    <%= form.submit "Deletar Selecionados", :class => 'btn btn-outline-danger mt-2' %>
+    </div >
   <% end %>
-  <%= link_to "Nova Reunião", new_post_path, class:"btn btn-outline-primary btn-small", style:"margin-top: 0.7rem;" %>
+  
 
 </div>
