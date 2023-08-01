@@ -1,14 +1,4 @@
 <%= form_with(model: post, html: {name: "post[sub_posts_attributes][#{local_assigns[:index]}]" }) do |form| %>
-  <% if post.errors.any? %>
-    <div style="color: red">
-      <h2><%= pluralize(post.errors.count, "error") %> prohibited this post from being saved:</h2>
-      <ul>
-        <% post.errors.each do |error| %>
-          <li><%= error.full_message %></li>
-        <% end %>
-      </ul>
-    </div>
-  <% end %>
   <tr>
     <tbody class="post-form">
       <td>
