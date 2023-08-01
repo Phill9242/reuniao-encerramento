@@ -70,7 +70,7 @@
       good_bad: form.querySelector(`#post_good_bad`).value,
     };
   });
-  if(description && status && good_bad){   
+ 
     fetch('/posts', {
       method: 'POST',
       headers: {
@@ -80,16 +80,7 @@
       body: JSON.stringify({ post: { sub_posts_attributes: sub_posts } }) 
     })
     .then(data => window.location.replace("/"));
-  }else {
-    const container = document.querySelector(".container")
-    const txtError = document.createElement("div")
-    txtError.innerHTML = "Verifique se preencheu todos os campos!"
-    txtError.classList.add("order-1")
-    txtError.classList.add("alert")
-    txtError.classList.add("alert-danger")
-    txtError.classList.add("mt-3")
-    container.add(txtError)
-  }
+
 });
 
 </script>
