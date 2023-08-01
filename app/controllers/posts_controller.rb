@@ -44,6 +44,21 @@ class PostsController < ApplicationController
     end
   end
 
+  def destroy_multiple 
+    puts "Destroy aqui"
+    puts "\n\n\nxxx\n\n\n"
+    puts params[:posts_id]
+    params[:posts_id].each do |id|
+      puts id
+      post = Post.find(id)
+      post.destroy
+    end
+    respond_to do |format|
+      format.html { redirect_to posts_url }
+      format.json { head :no_content }
+    end
+  end
+
   # DELETE /posts/1 or /posts/1.json
   def destroy
     @post.destroy
